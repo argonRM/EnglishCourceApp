@@ -10,7 +10,7 @@ import SwiftUI
 // MARK: - ToBeExerciseView
 struct ToBeExerciseView: View {
     // MARK: - Properties
-    @ObservedObject var viewModel: ToBeExerciseViewModel
+    @StateObject var viewModel: ToBeExerciseViewModel
     @State private var processingAnimation = false
     
     // MARK: - Body

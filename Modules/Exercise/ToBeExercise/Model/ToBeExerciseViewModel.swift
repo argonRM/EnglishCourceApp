@@ -14,7 +14,7 @@ class ToBeExerciseViewModel: ObservableObject {
     private var networkManager: NetworkManager
     
     // MARK: - Public
-    @Published var exercises: [ToBeExerciseDataFlow.ToBeExercise] = []
+    @Published var exercises: [ToBeExercise] = []
     @Published var isErrorOccurred: Bool = false
     @Published var isProcessing = false
     
@@ -70,13 +70,9 @@ class ToBeExerciseViewModel: ObservableObject {
         
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.exercises = [ToBeExerciseDataFlow.ToBeExercise(sentence: "I _ am a boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"]),
-                              ToBeExerciseDataFlow.ToBeExercise(sentence: "I _ am a boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"]),
-                              ToBeExerciseDataFlow.ToBeExercise(sentence: "I _ am a boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"]),
-                              ToBeExerciseDataFlow.ToBeExercise(sentence: "I _ am a boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"]),
-                              ToBeExerciseDataFlow.ToBeExercise(sentence: "I _ am a boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"]),
-                              ToBeExerciseDataFlow.ToBeExercise(sentence: "I _ am a boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"]),
-                              ToBeExerciseDataFlow.ToBeExercise(sentence: "I _ am a boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"])]
+            self.exercises = [ToBeExercise(sentence: "I _ am a boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"]),
+                              ToBeExercise(sentence: "I _ am a good student.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"]),
+                              ToBeExercise(sentence: "I _ am a lazy person.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"])]
             self.isProcessing = false
         }
     }
@@ -84,7 +80,7 @@ class ToBeExerciseViewModel: ObservableObject {
 
 // MARK: - Private
 private extension ToBeExerciseViewModel {
-    func parseSentenceOptionsString(_ input: String?) -> [ToBeExerciseDataFlow.ToBeExercise]? {
+    func parseSentenceOptionsString(_ input: String?) -> [ToBeExercise]? {
         guard let input else { return nil }
         let lines = input.components(separatedBy: "\n")
         
@@ -102,7 +98,7 @@ private extension ToBeExerciseViewModel {
             
             let validOption = options.first { $0.isEmpty == false } ?? ""
             
-            return ToBeExerciseDataFlow.ToBeExercise(sentence: sentence, partsOfSentence: partsOfSentence, validOption: validOption, options: options)
+            return ToBeExercise(sentence: sentence, partsOfSentence: partsOfSentence, validOption: validOption, options: options)
         }.compactMap { $0 }
     }
     
