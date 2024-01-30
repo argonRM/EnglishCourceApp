@@ -31,6 +31,7 @@
 		9A91E64B2B626C15000773C7 /* Arranger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E64A2B626C15000773C7 /* Arranger.swift */; };
 		9A91E6512B651025000773C7 /* SentenceExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6502B651025000773C7 /* SentenceExerciseViewModel.swift */; };
 		9A91E6552B65230F000773C7 /* ExerciseOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6542B65230F000773C7 /* ExerciseOptionsView.swift */; };
+		9AF1A03C2B69024E00564094 /* ToBeExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A03B2B69024E00564094 /* ToBeExerciseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		9A91E64A2B626C15000773C7 /* Arranger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arranger.swift; sourceTree = "<group>"; };
 		9A91E6502B651025000773C7 /* SentenceExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceExerciseViewModel.swift; sourceTree = "<group>"; };
 		9A91E6542B65230F000773C7 /* ExerciseOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseOptionsView.swift; sourceTree = "<group>"; };
+		9AF1A03B2B69024E00564094 /* ToBeExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeExerciseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		9A91E5E72B5E90CE000773C7 = {
 			isa = PBXGroup;
 			children = (
+				9AF1A03A2B69022F00564094 /* Services */,
 				9A91E6462B626BCE000773C7 /* Helpers */,
 				9A91E62C2B5ED983000773C7 /* Modules */,
 				9A91E6222B5E9164000773C7 /* Networking */,
@@ -266,6 +269,14 @@
 			path = ExerciseOptions;
 			sourceTree = "<group>";
 		};
+		9AF1A03A2B69022F00564094 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9AF1A03B2B69024E00564094 /* ToBeExerciseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -407,6 +418,7 @@
 				9A91E6292B5E92D0000773C7 /* ToBeSentensesResponse.swift in Sources */,
 				9A91E6552B65230F000773C7 /* ExerciseOptionsView.swift in Sources */,
 				9A91E6002B5E90CF000773C7 /* EnglishCourse.xcdatamodeld in Sources */,
+				9AF1A03C2B69024E00564094 /* ToBeExerciseService.swift in Sources */,
 				9A91E6242B5E91B5000773C7 /* NetworkManager.swift in Sources */,
 				9A91E6302B5ED9E8000773C7 /* ToBeExerciseViewModel.swift in Sources */,
 				9A91E6452B601E61000773C7 /* SentenceExerciseView.swift in Sources */,

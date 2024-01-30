@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class ToBeExerciseViewModel: ObservableObject {
+final class ToBeExerciseViewModel: ObservableObject {
     // MARK: - Private
     private var cancellation: AnyCancellable?
     private var networkManager: NetworkManager
@@ -20,6 +20,11 @@ class ToBeExerciseViewModel: ObservableObject {
     
     init(networkManager: NetworkManager) {
         self.networkManager = networkManager
+        self.getExercise()
+    }
+    
+    var isAllDone: Bool {
+        exercises.map(\.isDone).allSatisfy { $0 }
     }
     
     func getExercise() {

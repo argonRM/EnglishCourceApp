@@ -10,35 +10,29 @@ import SwiftUI
 // MARK: - ProcessingView
 struct ProcessingView: View {
     @State private var processingAnimation = false
-    @Binding var isVisible: Bool
+    var isVisible: Bool
     
     var body: some View {
         ZStack {
-            Color.black
-                .opacity(isVisible ? 0.6 : 0)
-                .ignoresSafeArea()
-                .blur(radius: processingAnimation ? 300 : 100, opaque: false)
-                .scaleEffect(processingAnimation ? 1 : 2)
-            
-            VStack {
-                Spacer()
-                ActivityIndicatorView(style: .medium, color: .white)
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .frame(width: 100)
-                    .scaleEffect(2)
-                Spacer()
-            }
-            .cornerRadius(10)
-            .padding()
-        }
-        .onAppear {
-            withAnimation(.easeIn(duration: 2).repeatForever(autoreverses: true)) {
-                processingAnimation.toggle()
+            if isVisible {
+                ZStack {
+                    Color.black
+                        .ignoresSafeArea()
+                        .blur(radius: processingAnimation ? 300 : 100, opaque: false)
+                        .scaleEffect(processingAnimation ? 1 : 2)
+                    
+                    ActivityIndicatorView(style: .medium, color: .white)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .frame(width: 100)
+                        .scaleEffect(2)
+                        .padding()
+                }
+                .animation(.easeIn(duration: 2).repeatForever(autoreverses: true), value: processingAnimation)
+                .transition(.opacity)
             }
         }
-        .opacity(isVisible ? 1 : 0)
-        .animation(.easeOut(duration: 1), value: isVisible)
+        .animation(.default, value: isVisible)
     }
 }
 
@@ -63,6 +57,6 @@ private extension ProcessingView {
 struct Processing_Previews: PreviewProvider {
     @State static var isVisible = true
     static var previews: some View {
-        ProcessingView(isVisible: $isVisible)
+        ProcessingView(isVisible: isVisible)
     }
 }

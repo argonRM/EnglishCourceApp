@@ -7,24 +7,23 @@
 
 import SwiftUI
 
-// MARK: - ToBeExerciseView
 struct ToBeExerciseView: View {
-    // MARK: - Properties
     @StateObject var viewModel: ToBeExerciseViewModel
     @State private var processingAnimation = false
     
-    // MARK: - Body
     var body: some View {
         ZStack {
-            ExercisesTabView(exercises: $viewModel.exercises)
-                .alert(isPresented: $viewModel.isErrorOccurred) {
-                    Alert(title: Text("Error"), message: Text( "Cannot download an exercise")
-                          , dismissButton: .default(Text("Ok:(")))
-                }
-                .onAppear {
-                    viewModel.getExercise()
-                }
-            ProcessingView(isVisible: $viewModel.isProcessing)
+            if viewModel.isAllDone {
+                Color.red.ignoresSafeArea()
+            } else {
+                ExercisesTabView(exercises: $viewModel.exercises)
+                    .alert(isPresented: $viewModel.isErrorOccurred) {
+                        Alert(title: Text("Error"), message: Text( "Cannot download an exercise")
+                              , dismissButton: .default(Text("Ok:(")))
+                    }
+            }
+            
+            ProcessingView(isVisible: viewModel.isProcessing)
         }
     }
 }

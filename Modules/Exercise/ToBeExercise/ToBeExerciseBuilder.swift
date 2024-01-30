@@ -8,7 +8,6 @@
 import SwiftUI
 
 class ToBeExerciseBuilder {
-    
     public func build() -> ToBeExerciseView {
         return initView()
     }

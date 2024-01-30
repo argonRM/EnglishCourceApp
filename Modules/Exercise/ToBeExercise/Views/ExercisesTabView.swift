@@ -15,15 +15,16 @@ struct ExercisesTabView: View {
     var body: some View {
         TabView {
             ForEach(exercises) { exercise in
-                ZStack {
-                    SentenceExerciseView(viewModel: SentenceExerciseViewModel(exercise: exercise))
-                }
+                SentenceExerciseView(viewModel: SentenceExerciseViewModel(exercise: exercise), exercises: $exercises)
+                    .tag(exercise.id)
             }
         }
         .tabViewStyle(.page)
+        .ignoresSafeArea()
         .background(
-            Color(.black)
+            Color(.red)
                 .opacity(0.2)
+                .ignoresSafeArea()
         )
     }
 }
