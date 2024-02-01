@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct ToBeExerciseView: View {
-    @StateObject var viewModel: ToBeExerciseViewModel
+struct ExerciseView<ExerciseService: ExerciseServiceProtocol>: View {
+    @StateObject var viewModel: ExerciseViewModel<ExerciseService>
     @State private var processingAnimation = false
+    
+   
     
     var body: some View {
         ZStack {
@@ -28,13 +30,9 @@ struct ToBeExerciseView: View {
     }
 }
 
-private extension ToBeExerciseView {
-   
-}
-
-// MARK: - Preview
+//MARK: - Preview
 struct ToBeExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        ToBeExerciseView(viewModel: ToBeExerciseViewModel(networkManager: NetworkManager()))
+        ExerciseView(viewModel: ExerciseViewModel(exerciseService: ToBeExerciseService(networkManager: NetworkManager())))
     }
 }

@@ -20,16 +20,15 @@
 		9A91E6272B5E926D000773C7 /* ToBeSentensesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6262B5E926D000773C7 /* ToBeSentensesRequest.swift */; };
 		9A91E6292B5E92D0000773C7 /* ToBeSentensesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6282B5E92D0000773C7 /* ToBeSentensesResponse.swift */; };
 		9A91E62B2B5E95AD000773C7 /* ToBeExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E62A2B5E95AD000773C7 /* ToBeExercise.swift */; };
-		9A91E6302B5ED9E8000773C7 /* ToBeExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E62F2B5ED9E8000773C7 /* ToBeExerciseViewModel.swift */; };
+		9A91E6302B5ED9E8000773C7 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E62F2B5ED9E8000773C7 /* ExerciseViewModel.swift */; };
 		9A91E6322B5EDF66000773C7 /* ToBeExerciseDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6312B5EDF66000773C7 /* ToBeExerciseDataFlow.swift */; };
-		9A91E6382B5EF01E000773C7 /* ToBeExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6372B5EF01E000773C7 /* ToBeExerciseView.swift */; };
+		9A91E6382B5EF01E000773C7 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6372B5EF01E000773C7 /* ExerciseView.swift */; };
 		9A91E63A2B5EF02D000773C7 /* ToBeExerciseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6392B5EF02D000773C7 /* ToBeExerciseBuilder.swift */; };
 		9A91E63F2B5FCB34000773C7 /* ProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E63E2B5FCB34000773C7 /* ProcessingView.swift */; };
 		9A91E6432B5FF090000773C7 /* ExercisesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6422B5FF090000773C7 /* ExercisesTabView.swift */; };
 		9A91E6452B601E61000773C7 /* SentenceExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6442B601E61000773C7 /* SentenceExerciseView.swift */; };
 		9A91E6482B626BE8000773C7 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6472B626BE8000773C7 /* FlowLayout.swift */; };
 		9A91E64B2B626C15000773C7 /* Arranger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E64A2B626C15000773C7 /* Arranger.swift */; };
-		9A91E6512B651025000773C7 /* SentenceExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6502B651025000773C7 /* SentenceExerciseViewModel.swift */; };
 		9A91E6552B65230F000773C7 /* ExerciseOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6542B65230F000773C7 /* ExerciseOptionsView.swift */; };
 		9AF1A03C2B69024E00564094 /* ToBeExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A03B2B69024E00564094 /* ToBeExerciseService.swift */; };
 /* End PBXBuildFile section */
@@ -68,16 +67,15 @@
 		9A91E6262B5E926D000773C7 /* ToBeSentensesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeSentensesRequest.swift; sourceTree = "<group>"; };
 		9A91E6282B5E92D0000773C7 /* ToBeSentensesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeSentensesResponse.swift; sourceTree = "<group>"; };
 		9A91E62A2B5E95AD000773C7 /* ToBeExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeExercise.swift; sourceTree = "<group>"; };
-		9A91E62F2B5ED9E8000773C7 /* ToBeExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeExerciseViewModel.swift; sourceTree = "<group>"; };
+		9A91E62F2B5ED9E8000773C7 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		9A91E6312B5EDF66000773C7 /* ToBeExerciseDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeExerciseDataFlow.swift; sourceTree = "<group>"; };
-		9A91E6372B5EF01E000773C7 /* ToBeExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeExerciseView.swift; sourceTree = "<group>"; };
+		9A91E6372B5EF01E000773C7 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		9A91E6392B5EF02D000773C7 /* ToBeExerciseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeExerciseBuilder.swift; sourceTree = "<group>"; };
 		9A91E63E2B5FCB34000773C7 /* ProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingView.swift; sourceTree = "<group>"; };
 		9A91E6422B5FF090000773C7 /* ExercisesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTabView.swift; sourceTree = "<group>"; };
 		9A91E6442B601E61000773C7 /* SentenceExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceExerciseView.swift; sourceTree = "<group>"; };
 		9A91E6472B626BE8000773C7 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		9A91E64A2B626C15000773C7 /* Arranger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arranger.swift; sourceTree = "<group>"; };
-		9A91E6502B651025000773C7 /* SentenceExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceExerciseViewModel.swift; sourceTree = "<group>"; };
 		9A91E6542B65230F000773C7 /* ExerciseOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseOptionsView.swift; sourceTree = "<group>"; };
 		9AF1A03B2B69024E00564094 /* ToBeExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeExerciseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,7 +194,7 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		9A91E62D2B5ED991000773C7 /* ToBeExercise */ = {
+		9A91E62D2B5ED991000773C7 /* Exercise */ = {
 			isa = PBXGroup;
 			children = (
 				9A91E63D2B5FCB1A000773C7 /* Views */,
@@ -204,13 +202,13 @@
 				9A91E6312B5EDF66000773C7 /* ToBeExerciseDataFlow.swift */,
 				9A91E6392B5EF02D000773C7 /* ToBeExerciseBuilder.swift */,
 			);
-			path = ToBeExercise;
+			path = Exercise;
 			sourceTree = "<group>";
 		};
 		9A91E62E2B5ED9C9000773C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9A91E62F2B5ED9E8000773C7 /* ToBeExerciseViewModel.swift */,
+				9A91E62F2B5ED9E8000773C7 /* ExerciseViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,7 +216,9 @@
 		9A91E63D2B5FCB1A000773C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9A91E6372B5EF01E000773C7 /* ToBeExerciseView.swift */,
+				9A91E6542B65230F000773C7 /* ExerciseOptionsView.swift */,
+				9A91E6442B601E61000773C7 /* SentenceExerciseView.swift */,
+				9A91E6372B5EF01E000773C7 /* ExerciseView.swift */,
 				9A91E63E2B5FCB34000773C7 /* ProcessingView.swift */,
 				9A91E6422B5FF090000773C7 /* ExercisesTabView.swift */,
 			);
@@ -242,31 +242,12 @@
 			path = FlowLayout;
 			sourceTree = "<group>";
 		};
-		9A91E64E2B650FCC000773C7 /* SentenceExercise */ = {
-			isa = PBXGroup;
-			children = (
-				9A91E6442B601E61000773C7 /* SentenceExerciseView.swift */,
-				9A91E6502B651025000773C7 /* SentenceExerciseViewModel.swift */,
-			);
-			path = SentenceExercise;
-			sourceTree = "<group>";
-		};
 		9A91E6522B6522C4000773C7 /* Exercise */ = {
 			isa = PBXGroup;
 			children = (
-				9A91E6532B6522E8000773C7 /* ExerciseOptions */,
-				9A91E64E2B650FCC000773C7 /* SentenceExercise */,
-				9A91E62D2B5ED991000773C7 /* ToBeExercise */,
+				9A91E62D2B5ED991000773C7 /* Exercise */,
 			);
 			path = Exercise;
-			sourceTree = "<group>";
-		};
-		9A91E6532B6522E8000773C7 /* ExerciseOptions */ = {
-			isa = PBXGroup;
-			children = (
-				9A91E6542B65230F000773C7 /* ExerciseOptionsView.swift */,
-			);
-			path = ExerciseOptions;
 			sourceTree = "<group>";
 		};
 		9AF1A03A2B69022F00564094 /* Services */ = {
@@ -412,15 +393,14 @@
 				9A91E64B2B626C15000773C7 /* Arranger.swift in Sources */,
 				9A91E6272B5E926D000773C7 /* ToBeSentensesRequest.swift in Sources */,
 				9A91E6322B5EDF66000773C7 /* ToBeExerciseDataFlow.swift in Sources */,
-				9A91E6512B651025000773C7 /* SentenceExerciseViewModel.swift in Sources */,
 				9A91E5FD2B5E90CF000773C7 /* Persistence.swift in Sources */,
-				9A91E6382B5EF01E000773C7 /* ToBeExerciseView.swift in Sources */,
+				9A91E6382B5EF01E000773C7 /* ExerciseView.swift in Sources */,
 				9A91E6292B5E92D0000773C7 /* ToBeSentensesResponse.swift in Sources */,
 				9A91E6552B65230F000773C7 /* ExerciseOptionsView.swift in Sources */,
 				9A91E6002B5E90CF000773C7 /* EnglishCourse.xcdatamodeld in Sources */,
 				9AF1A03C2B69024E00564094 /* ToBeExerciseService.swift in Sources */,
 				9A91E6242B5E91B5000773C7 /* NetworkManager.swift in Sources */,
-				9A91E6302B5ED9E8000773C7 /* ToBeExerciseViewModel.swift in Sources */,
+				9A91E6302B5ED9E8000773C7 /* ExerciseViewModel.swift in Sources */,
 				9A91E6452B601E61000773C7 /* SentenceExerciseView.swift in Sources */,
 				9A91E62B2B5E95AD000773C7 /* ToBeExercise.swift in Sources */,
 				9A91E5F62B5E90CE000773C7 /* ContentView.swift in Sources */,

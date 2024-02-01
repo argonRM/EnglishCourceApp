@@ -10,11 +10,8 @@ import UIKit
 
 struct SentenceExerciseView: View {
     // MARK: - Properties
-    @StateObject var viewModel: SentenceExerciseViewModel
-    @Binding var exercises: [ToBeExercise]
-    
-    //    var exercises: ToBeExercise
-    //    var action: (ToBeExercise) -> ()
+    @Binding var exercise: ToBeExercise
+    @State var isGapAnimating: Bool = false
     
     // MARK: - Body
     var body: some View {
@@ -24,7 +21,7 @@ struct SentenceExerciseView: View {
             VStack {
                 Spacer()
                     FlowLayout(spacing: 12, alignment: .center) {
-                        ForEach(viewModel.exercise.partsOfSentence, id: \.self) { string in
+                        ForEach(exercise.partsOfSentence, id: \.self) { string in
                             if string == "_" {
                                 ZStack {
                                     Capsule()
@@ -34,7 +31,7 @@ struct SentenceExerciseView: View {
                                         .stroke(.gray, lineWidth: 4)
                                         .frame(width: 80, height: 40)
                                 }
-                                .scaleEffect(viewModel.isGapAnimating ? 1.1 : 1)
+                                .scaleEffect(isGapAnimating ? 1.1 : 1)
                             } else {
                                 Text(string)
                                     .italic()
@@ -48,13 +45,13 @@ struct SentenceExerciseView: View {
                     .padding()
                     .onAppear {
                         withAnimation(.easeIn(duration: 0.8).repeatForever(autoreverses: true)) {
-                            viewModel.isGapAnimating.toggle()
+                            isGapAnimating.toggle()
                         }
                     }
                 
                 Spacer()
                 
-                ExerciseOptionsView(viewModel: viewModel)
+                ExerciseOptionsView(exercise: $exercise)
                     .padding(.bottom, 40)
             }
         }

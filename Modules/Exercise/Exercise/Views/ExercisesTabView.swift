@@ -14,8 +14,8 @@ struct ExercisesTabView: View {
     // MARK: - Body
     var body: some View {
         TabView {
-            ForEach(exercises) { exercise in
-                SentenceExerciseView(viewModel: SentenceExerciseViewModel(exercise: exercise), exercises: $exercises)
+            ForEach($exercises) { exercise in
+                SentenceExerciseView(exercise: exercise)
                     .tag(exercise.id)
             }
         }
