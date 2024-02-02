@@ -23,6 +23,15 @@ class Topic: ObservableObject, Identifiable {
         self.id = topicManagedModel.id ?? UUID()
     }
     
+    //for preview
+    init() {
+        self.status = .inProgress
+        self.title = "To Be"
+        self.subtitle = "Present Simple"
+        self.date = Date()
+        self.id = UUID()
+    }
+    
     var statusColor: Color {
         .subtitleColor
     }

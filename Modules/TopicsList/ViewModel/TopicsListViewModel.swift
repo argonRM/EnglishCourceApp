@@ -11,7 +11,8 @@ import SwiftUI
 
 class TopicsListViewModel: ObservableObject {
     @Published var topics: [Topic] = []
-    let addTopicsService: AddTopicsService
+    
+    private let addTopicsService: AddTopicsService
 
     init(context: NSManagedObjectContext, addTopicsService: AddTopicsService) {
         self.addTopicsService = addTopicsService

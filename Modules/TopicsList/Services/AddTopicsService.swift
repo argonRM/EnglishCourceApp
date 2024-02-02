@@ -32,10 +32,24 @@ class AddTopicsService {
         
         let toBePastTopic = TopicManagedModel(context: persistenceController.container.viewContext)
         toBePastTopic.status = 0
-        toBePastTopic.title = "Do does"
-        toBePastTopic.subtitle = "Present Simple"
+        toBePastTopic.title = "Was Were"
+        toBePastTopic.subtitle = "Past Simple"
         toBePastTopic.date = Date()
         toBePastTopic.id = UUID()
+        
+        let presentTopic = TopicManagedModel(context: persistenceController.container.viewContext)
+        presentTopic.status = 0
+        presentTopic.title = "Do does"
+        presentTopic.subtitle = "Present Simple"
+        presentTopic.date = Date()
+        presentTopic.id = UUID()
+        
+        let presentQuestionsTopic = TopicManagedModel(context: persistenceController.container.viewContext)
+        presentQuestionsTopic.status = 0
+        presentQuestionsTopic.title = "Present Simple Questions"
+        presentQuestionsTopic.subtitle = "Present Simple"
+        presentQuestionsTopic.date = Date()
+        presentQuestionsTopic.id = UUID()
         
         do {
             try persistenceController.container.viewContext.save()
