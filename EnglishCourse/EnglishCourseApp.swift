@@ -15,7 +15,9 @@ struct EnglishCourseApp: App {
         WindowGroup {
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            ToBeExerciseBuilder().build()
+//            ToBeExerciseBuilder().build()
+            
+            TopicsListBuilder().build()
         }
     }
 }
