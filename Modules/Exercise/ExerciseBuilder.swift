@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class ToBeExerciseBuilder {
+class ExerciseBuilder {
     public func build() -> ExerciseView<ToBeExerciseService> {
         return initView()
     }

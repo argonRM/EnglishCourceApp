@@ -14,8 +14,11 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let toBeTopic = TopicManagedModel(context: viewContext)
+            toBeTopic.status = 0
+            toBeTopic.title = "To Be"
+            toBeTopic.subtitle = "Present Simple"
+            toBeTopic.date = Date()
         }
         do {
             try viewContext.save()

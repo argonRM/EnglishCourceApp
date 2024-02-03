@@ -44,7 +44,6 @@ struct Arranger {
             maxY = max(maxY, frame.maxY)
 
             if frame.origin.x == 0 {
-                // Знаходження всіх груп елементів з x рівним 0
                 currentGroup = [cell]
             } else {
                 currentGroup.append(cell)
@@ -55,7 +54,6 @@ struct Arranger {
             }
         }
 
-        // Додаткова обробка для вирівнювання груп
         if alignment == .center {
             for group in groups {
                 let totalWidth = group.reduce(0, { $0 + $1.frame.width + spacing })

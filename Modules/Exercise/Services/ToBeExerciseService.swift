@@ -8,20 +8,6 @@
 import Foundation
 import Combine
 
-protocol ExerciseServiceProtocol: ObservableObject {
-    ///Properties exercises, isErrorOccurred, isProcessing should be @Published
-    var exercises: [ToBeExercise] { get set }
-    var isErrorOccurred: Bool { get set }
-    var isProcessing: Bool { get set }
-    var isAllDone: Bool { get }
-    
-    var exercisesPublisher: Published<[ToBeExercise]>.Publisher { get }
-    var isErrorOccurredPublisher: Published<Bool>.Publisher { get }
-    var isProcessingPublisher: Published<Bool>.Publisher { get }
-
-    func getExercise()
-}
-
 final class ToBeExerciseService: ExerciseServiceProtocol {
     var exercisesPublisher: Published<[ToBeExercise]>.Publisher {
         $exercises
