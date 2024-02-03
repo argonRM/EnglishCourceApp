@@ -4,3 +4,5 @@ Pods/
 xcshareddata/
 .vscode
 *.generated.swift
+xcuserdata/
+*.xcuserstate
