@@ -1,0 +1,60 @@
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  - function_body_length 
+  - notification_center_detachment
+ #- todo
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - implicit_return
+  - overridden_super_call
+  - prohibited_super_call
+
+excluded:
+  - Pods
+  - R.generated.swift
+  - /LaserShip/Storage/ManagedModels/Stop/ManagedStop+CoreDataProperties.swift
+  - /LaserShip/Storage/ManagedModels/Event/ManagedEvent+CoreDataProperties.swift
+  - /LaserShip/Storage/ManagedModels/Piece/ManagedPiece+CoreDataProperties.swift
+
+analyzer_rules:
+  - explicit_self
+
+force_cast: warning
+force_try:
+  severity: warning # explicitly
+
+line_length:
+  warning: 210
+  ignores_comments: true
+
+
+type_body_length:
+  - 300 # warning
+  - 400 # error
+
+file_length:
+  warning: 700
+  error: 1200
+
+large_tuple:
+ - 4 # warning
+ - 4 # error
+
+type_name:
+  min_length: 3
+  max_length: 
+    warning: 40
+    error: 50
+  excluded: iPhone
+  allowed_symbols: ["_"]
+
+identifier_name:
+  min_length: 
+    error: 3
+  excluded: 
+    - en
+    - es
+
+reporter: "xcode"
