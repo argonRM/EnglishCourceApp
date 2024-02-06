@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-class ExerciseBuilder {
-    public func build() -> ExerciseView<ToBeExerciseService> {
+class ExerciseBuilder: ScreenBuilder {
+    public func build() -> AnyView {
         return initView()
     }
 
-    private func initView() -> ExerciseView<ToBeExerciseService> {
+    private func initView() -> AnyView {
         let networkManager: NetworkManager = NetworkManager()
         let toBeExerciseService = ToBeExerciseService(networkManager: networkManager)
         let viewModel = ExerciseViewModel(exerciseService: toBeExerciseService)
         let view = ExerciseView(viewModel: viewModel)
         
-        return view
+        return AnyView(view)
     }
 }

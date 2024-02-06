@@ -17,7 +17,7 @@ struct EnglishCourseApp: App {
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
 //            ToBeExerciseBuilder().build()
             
-            TopicsListBuilder().build()
+            CoordinatorView()
         }
     }
 }

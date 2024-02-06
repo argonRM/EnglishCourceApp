@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TopicsListView: View {
     @ObservedObject private var viewModel: TopicsListViewModel
+    @EnvironmentObject private var coordinator: Coordinator
     
     init(viewModel: TopicsListViewModel) {
         self.viewModel = viewModel
@@ -19,6 +20,9 @@ struct TopicsListView: View {
         List {
             ForEach(viewModel.topics) { topic in
                 TopicsListViewCell(topic: topic)
+                    .onTapGesture {
+                        coordinator.push(.topicDescription)
+                    }
             }
             
         }

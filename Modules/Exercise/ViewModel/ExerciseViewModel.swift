@@ -10,12 +10,14 @@ import Combine
 import SwiftUI
 
 final class ExerciseViewModel<ExerciseService>: ObservableObject where ExerciseService: ExerciseServiceProtocol {
-   
-    private var exerciseService: ExerciseService
+    
+    @Published private var exerciseService: ExerciseService
     private var cancellables: Set<AnyCancellable> = []
     @Published var exercises: [ToBeExercise] = []
     @Published var isErrorOccurred: Bool = false
     @Published var isProcessing = false
+    
+    var exercisesFinished: (()->())?
     
     init(exerciseService: ExerciseService) {
         self.exerciseService = exerciseService
@@ -23,15 +25,6 @@ final class ExerciseViewModel<ExerciseService>: ObservableObject where ExerciseS
         
         self.setupPublishers()
 
-    }
-    
-    var isAllDone: Bool {
-        exercises.map(\.isDone).allSatisfy { $0 }
-    }
-    
-    func getExercise() {
-        isProcessing = true
-        exerciseService.getExercise()
     }
     
     func setupPublishers() {
@@ -46,5 +39,12 @@ final class ExerciseViewModel<ExerciseService>: ObservableObject where ExerciseS
         exerciseService.isProcessingPublisher
             .assign(to: \.isProcessing, on: self)
                         .store(in: &cancellables)
+        
+        $exercises
+            .sink(receiveValue: { [weak self] exercises in
+                guard exercises.count > 0, exercises.map(\.isDone).allSatisfy({ $0 }) == true else { return }
+                self?.exercisesFinished?()
+            })
+            .store(in: &cancellables)
     }
 }

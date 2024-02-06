@@ -32,7 +32,10 @@ final class ToBeExerciseService: ExerciseServiceProtocol {
     }
     
     var isAllDone: Bool {
-        exercises.map(\.isDone).allSatisfy { $0 }
+        print("isDone")
+        exercises.forEach({ print($0.isDone) })
+        
+        return exercises.map(\.isDone).allSatisfy { $0 }
     }
     
     func getExercise() {

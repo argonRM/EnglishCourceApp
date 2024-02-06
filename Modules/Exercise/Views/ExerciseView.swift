@@ -10,22 +10,23 @@ import SwiftUI
 struct ExerciseView<ExerciseService: ExerciseServiceProtocol>: View {
     @StateObject var viewModel: ExerciseViewModel<ExerciseService>
     @State private var processingAnimation = false
-    
+    @EnvironmentObject private var coordinator: Coordinator
    
     
     var body: some View {
         ZStack {
-            if viewModel.isAllDone {
-                Color.red.ignoresSafeArea()
-            } else {
-                ExercisesTabView(exercises: $viewModel.exercises)
-                    .alert(isPresented: $viewModel.isErrorOccurred) {
-                        Alert(title: Text("Error"), message: Text( "Cannot download an exercise")
-                              , dismissButton: .default(Text("Ok:(")))
-                    }
-            }
+            ExercisesTabView(exercises: $viewModel.exercises)
+                .alert(isPresented: $viewModel.isErrorOccurred) {
+                    Alert(title: Text("Error"), message: Text( "Cannot download an exercise")
+                          , dismissButton: .default(Text("Ok :(")))
+                }
             
             ProcessingView(isVisible: viewModel.isProcessing)
+        }
+        .onAppear {
+            viewModel.exercisesFinished = {
+                coordinator.popToRoot()
+            }
         }
     }
 }

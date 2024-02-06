@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct TopicDescriptionView: View {
+    @EnvironmentObject private var coordinator: Coordinator
+    
     var body: some View {
         VStack {
             Text("TopicDescriptionView")
             
             Button {
-                
+                coordinator.push(.exercise)
             } label: {
                 RoundedRectangle(cornerRadius: 20)
                     .frame(width: 200, height: 50)
