@@ -28,7 +28,7 @@ struct TopicsListView: View {
             
         }
         .listStyle(.plain)
-        .background(Color.accentColor)
+        .background(Color.topicsBackground)
     }
     
     func printTopic(topic: Topic) -> EmptyView {

@@ -13,6 +13,7 @@ struct ToBeExercise: Identifiable {
     var partsOfSentence: [String]
     let validOption: String
     let options: [String]
+    var imageUrl: String?
     var isDone = false {
         didSet {
             guard isDone == true else { return }

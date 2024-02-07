@@ -20,4 +20,8 @@ extension Color {
     static var titleColor: Color {
         Color("titleColor")
     }
+    
+    static var topicsBackground: Color {
+        Color("topicsBackground")
+    }
 }

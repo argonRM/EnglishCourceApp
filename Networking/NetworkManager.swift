@@ -13,21 +13,24 @@ struct NetworkManager {
     // MARK: - Request
     enum Request {
         case toBeSentences
+        case generateImage
         
         var endPoint: String {
             switch self {
             case .toBeSentences:
                 return "https://api.openai.com/v1/chat/completions"
+            case .generateImage:
+                return "https://api.openai.com/v1/images/generations"
             }
         }
         
         private var apiKey: String {
-            "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"
+            "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"
         }
         
         private var method: String {
             switch self {
-            case .toBeSentences:
+            case .toBeSentences, .generateImage:
                 return "POST"
             }
         }

@@ -21,4 +21,5 @@ protocol ExerciseServiceProtocol: ObservableObject {
 
     func getExercise()
     func markTopicDone()
+    func getImagesForExecises()
 }

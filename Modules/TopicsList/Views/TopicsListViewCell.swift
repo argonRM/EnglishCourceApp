@@ -48,7 +48,7 @@ struct TopicsListViewCell: View {
             }
             
         }
-        .listRowBackground(Color.accentColor)
+        .listRowBackground(Color.topicsBackground)
         .listRowSeparator(.hidden)
     }
     

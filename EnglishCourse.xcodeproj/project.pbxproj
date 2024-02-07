@@ -11,6 +11,8 @@
 		9A2564EB2B6F9BD2009CF630 /* ScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2564EA2B6F9BD2009CF630 /* ScreenBuilder.swift */; };
 		9A2564ED2B6F9C73009CF630 /* TopicDescriptionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2564EC2B6F9C73009CF630 /* TopicDescriptionBuilder.swift */; };
 		9A2564EF2B6F9F99009CF630 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2564EE2B6F9F99009CF630 /* CoordinatorView.swift */; };
+		9A2831CC2B7410BF00AE0914 /* GenerateImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2831CB2B7410BF00AE0914 /* GenerateImageResponse.swift */; };
+		9A2831CE2B74193F00AE0914 /* GenerateImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2831CD2B74193F00AE0914 /* GenerateImageRequest.swift */; };
 		9A4C4DCC2B6D035C008843C5 /* TopicsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C4DCB2B6D035C008843C5 /* TopicsListView.swift */; };
 		9A4C4DD02B6D1331008843C5 /* AddTopicsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C4DCF2B6D1331008843C5 /* AddTopicsService.swift */; };
 		9A4C4DD32B6D5662008843C5 /* TopicDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C4DD22B6D5662008843C5 /* TopicDescriptionView.swift */; };
@@ -66,6 +68,8 @@
 		9A2564EA2B6F9BD2009CF630 /* ScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBuilder.swift; sourceTree = "<group>"; };
 		9A2564EC2B6F9C73009CF630 /* TopicDescriptionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDescriptionBuilder.swift; sourceTree = "<group>"; };
 		9A2564EE2B6F9F99009CF630 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		9A2831CB2B7410BF00AE0914 /* GenerateImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageResponse.swift; sourceTree = "<group>"; };
+		9A2831CD2B74193F00AE0914 /* GenerateImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageRequest.swift; sourceTree = "<group>"; };
 		9A4C4DCB2B6D035C008843C5 /* TopicsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsListView.swift; sourceTree = "<group>"; };
 		9A4C4DCF2B6D1331008843C5 /* AddTopicsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopicsService.swift; sourceTree = "<group>"; };
 		9A4C4DD22B6D5662008843C5 /* TopicDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDescriptionView.swift; sourceTree = "<group>"; };
@@ -283,6 +287,8 @@
 				9A91E6262B5E926D000773C7 /* ToBeSentensesRequest.swift */,
 				9A91E6282B5E92D0000773C7 /* ToBeSentensesResponse.swift */,
 				9A91E62A2B5E95AD000773C7 /* ToBeExercise.swift */,
+				9A2831CB2B7410BF00AE0914 /* GenerateImageResponse.swift */,
+				9A2831CD2B74193F00AE0914 /* GenerateImageRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -497,6 +503,7 @@
 				9A2564E92B6F96BE009CF630 /* Coordinator.swift in Sources */,
 				9A4C4DD32B6D5662008843C5 /* TopicDescriptionView.swift in Sources */,
 				9A91E6292B5E92D0000773C7 /* ToBeSentensesResponse.swift in Sources */,
+				9A2831CE2B74193F00AE0914 /* GenerateImageRequest.swift in Sources */,
 				9A91E6552B65230F000773C7 /* ExerciseOptionsView.swift in Sources */,
 				9A91E6002B5E90CF000773C7 /* EnglishCourse.xcdatamodeld in Sources */,
 				9A4C4DE12B6D89D2008843C5 /* ExerciseServiceProtocol.swift in Sources */,
@@ -509,6 +516,7 @@
 				9A4C4DD62B6D706E008843C5 /* Topic.swift in Sources */,
 				9A91E6302B5ED9E8000773C7 /* ExerciseViewModel.swift in Sources */,
 				9A2564EB2B6F9BD2009CF630 /* ScreenBuilder.swift in Sources */,
+				9A2831CC2B7410BF00AE0914 /* GenerateImageResponse.swift in Sources */,
 				9A91E6452B601E61000773C7 /* SentenceExerciseView.swift in Sources */,
 				9A91E62B2B5E95AD000773C7 /* ToBeExercise.swift in Sources */,
 				9A4C4DD02B6D1331008843C5 /* AddTopicsService.swift in Sources */,
