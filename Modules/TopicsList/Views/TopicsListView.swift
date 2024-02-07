@@ -19,6 +19,7 @@ struct TopicsListView: View {
     var body: some View {
         List {
             ForEach(viewModel.topics) { topic in
+                printTopic(topic: topic)
                 TopicsListViewCell(topic: topic)
                     .onTapGesture {
                         coordinator.push(.topicDescription)
@@ -29,7 +30,13 @@ struct TopicsListView: View {
         .listStyle(.plain)
         .background(Color.accentColor)
     }
+    
+    func printTopic(topic: Topic) -> EmptyView {
+        print("\(topic.subtitle) \(topic.title) \(topic.status)")
+        return EmptyView()
+    }
 }
+
 
 struct TopicsListView_Previews: PreviewProvider {
     static var previews: some View {

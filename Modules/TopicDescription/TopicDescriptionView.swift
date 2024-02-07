@@ -26,7 +26,6 @@ struct TopicDescriptionView: View {
                             .foregroundColor(.white)
                             .fontWeight(.bold)
                     )
-                    
             }
 
         }

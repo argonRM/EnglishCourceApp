@@ -12,7 +12,7 @@ class Topic: ObservableObject, Identifiable {
     let subtitle: String
     let title: String
     let date: Date
-    let status: Status
+    var status: Status
     let id: UUID
     
     init(topicManagedModel: TopicManagedModel) {

@@ -34,6 +34,6 @@ struct ExerciseView<ExerciseService: ExerciseServiceProtocol>: View {
 //MARK: - Preview
 struct ToBeExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseView(viewModel: ExerciseViewModel(exerciseService: ToBeExerciseService(networkManager: NetworkManager())))
+        ExerciseView(viewModel: ExerciseViewModel(exerciseService: ToBeExerciseService(networkManager: NetworkManager(), context: PersistenceController.preview.container.viewContext)))
     }
 }

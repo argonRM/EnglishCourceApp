@@ -20,4 +20,5 @@ protocol ExerciseServiceProtocol: ObservableObject {
     var isProcessingPublisher: Published<Bool>.Publisher { get }
 
     func getExercise()
+    func markTopicDone()
 }

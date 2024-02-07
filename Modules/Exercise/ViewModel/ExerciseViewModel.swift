@@ -43,6 +43,7 @@ final class ExerciseViewModel<ExerciseService>: ObservableObject where ExerciseS
         $exercises
             .sink(receiveValue: { [weak self] exercises in
                 guard exercises.count > 0, exercises.map(\.isDone).allSatisfy({ $0 }) == true else { return }
+                self?.exerciseService.markTopicDone()
                 self?.exercisesFinished?()
             })
             .store(in: &cancellables)

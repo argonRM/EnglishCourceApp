@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import CoreData
 
 final class ToBeExerciseService: ExerciseServiceProtocol {
     var exercisesPublisher: Published<[ToBeExercise]>.Publisher {
@@ -23,12 +24,14 @@ final class ToBeExerciseService: ExerciseServiceProtocol {
 
     private var cancellation: AnyCancellable?
     private var networkManager: NetworkManager
+    private var context: NSManagedObjectContext
     @Published var exercises: [ToBeExercise] = []
     @Published var isErrorOccurred: Bool = false
     @Published var isProcessing = false
     
-    init(networkManager: NetworkManager) {
+    init(networkManager: NetworkManager, context: NSManagedObjectContext) {
         self.networkManager = networkManager
+        self.context = context
     }
     
     var isAllDone: Bool {
@@ -36,6 +39,10 @@ final class ToBeExerciseService: ExerciseServiceProtocol {
         exercises.forEach({ print($0.isDone) })
         
         return exercises.map(\.isDone).allSatisfy { $0 }
+    }
+    
+    func markTopicDone() {
+        markTopicDone(context: context)
     }
     
     func getExercise() {
@@ -133,5 +140,21 @@ private extension ToBeExerciseService {
         }
 
         return separatedStrings
+    }
+    
+    func markTopicDone(context: NSManagedObjectContext) {
+        let request = NSFetchRequest<TopicManagedModel>(entityName: "TopicManagedModel")
+        request.predicate = NSPredicate(format: "subtitle == %@ AND title == %@", "Present Simple", "To Be")
+
+        do {
+            let topics = try context.fetch(request)
+            
+            if let firstTopic = topics.first {
+                firstTopic.status = Int16(Topic.Status.finished.rawValue)
+                try context.save()
+            }
+        } catch {
+            print("Error fetching or saving data: \(error.localizedDescription)")
+        }
     }
 }

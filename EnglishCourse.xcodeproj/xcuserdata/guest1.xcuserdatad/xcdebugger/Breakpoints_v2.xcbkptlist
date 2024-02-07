@@ -386,5 +386,228 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "691CCFBE-6D99-489C-B476-640B031EFC47"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "markTopicDone(context:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "691CCFBE-6D99-489C-B476-640B031EFC47 - 592bac62e015d12b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ToBeExerciseService.markTopicDone(context: __C.NSManagedObjectContext) -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152"
+                  offsetFromSymbolStart = "684">
+               </Location>
+               <Location
+                  uuid = "691CCFBE-6D99-489C-B476-640B031EFC47 - 592bac62e015d12b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ToBeExerciseService.markTopicDone(context: __C.NSManagedObjectContext) -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152"
+                  offsetFromSymbolStart = "832">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38ED7824-E79E-4157-AC94-8E8028C1C0A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/TopicsList/Views/TopicsListViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "38ED7824-E79E-4157-AC94-8E8028C1C0A1 - 7eb584a4a7523a9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Image)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Image)&gt;&gt;)&gt; in EnglishCourse.TopicsListViewCell.body.getter : some"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/TopicsList/Views/TopicsListViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "536">
+               </Location>
+               <Location
+                  uuid = "38ED7824-E79E-4157-AC94-8E8028C1C0A1 - 4da7844c80ea9162"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.italic(Swift.Bool) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Image)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Image)&gt;&gt;)&gt; in EnglishCourse.TopicsListViewCell.body.getter : some"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/TopicsList/Views/TopicsListViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "666BD343-3B07-42DF-8861-EE7AF48D4C99"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/TopicsList/Views/TopicsListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "666BD343-3B07-42DF-8861-EE7AF48D4C99 - 5c5fb0d5370961ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EnglishCourse.Topic) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;EnglishCourse.Topic&gt;, Foundation.UUID, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt; in EnglishCourse.TopicsListView.body.getter : some"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/TopicsList/Views/TopicsListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "666BD343-3B07-42DF-8861-EE7AF48D4C99 - a54a85327a235470"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EnglishCourse.Topic) -&gt; SwiftUI.TupleView&lt;(SwiftUI.EmptyView, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;EnglishCourse.Topic&gt;, Foundation.UUID, SwiftUI.TupleView&lt;(SwiftUI.EmptyView, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt;&gt; in EnglishCourse.TopicsListView.body.getter : some"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/TopicsList/Views/TopicsListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "666BD343-3B07-42DF-8861-EE7AF48D4C99 - a54a85327a235470"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EnglishCourse.Topic) -&gt; SwiftUI.TupleView&lt;(SwiftUI.EmptyView, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;EnglishCourse.Topic&gt;, Foundation.UUID, SwiftUI.TupleView&lt;(SwiftUI.EmptyView, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt;&gt; in EnglishCourse.TopicsListView.body.getter : some"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/TopicsList/Views/TopicsListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22E7E6B8-9DE6-452F-8C4F-F04A90C57650"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/TopicsList/ViewModel/TopicsListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchDataFromCoreData(context:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "22E7E6B8-9DE6-452F-8C4F-F04A90C57650 - 9920c5ad9cbe0d2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; Swift.Optional&lt;Swift.Array&lt;EnglishCourse.Topic&gt;&gt; in EnglishCourse.TopicsListViewModel.fetchDataFromCoreData(context: __C.NSManagedObjectContext) -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/TopicsList/ViewModel/TopicsListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "22E7E6B8-9DE6-452F-8C4F-F04A90C57650 - 694c84d87df26087"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EnglishCourse.TopicManagedModel) -&gt; EnglishCourse.Topic in closure #1 (Swift.Bool) -&gt; Swift.Optional&lt;Swift.Array&lt;EnglishCourse.Topic&gt;&gt; in EnglishCourse.TopicsListViewModel.fetchDataFromCoreData(context: __C.NSManagedObjectContext) -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/TopicsList/ViewModel/TopicsListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E54B901C-7ABA-42E9-8D44-F253E048EAFA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/TopicsList/Views/TopicsListViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

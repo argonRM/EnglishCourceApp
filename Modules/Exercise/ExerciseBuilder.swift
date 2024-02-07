@@ -14,7 +14,8 @@ class ExerciseBuilder: ScreenBuilder {
 
     private func initView() -> AnyView {
         let networkManager: NetworkManager = NetworkManager()
-        let toBeExerciseService = ToBeExerciseService(networkManager: networkManager)
+        let viewContext = PersistenceController.shared.container.viewContext
+        let toBeExerciseService = ToBeExerciseService(networkManager: networkManager, context: viewContext)
         let viewModel = ExerciseViewModel(exerciseService: toBeExerciseService)
         let view = ExerciseView(viewModel: viewModel)
         

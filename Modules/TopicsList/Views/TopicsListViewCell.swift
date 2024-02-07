@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TopicsListViewCell: View {
-    @StateObject var topic: Topic
+    @ObservedObject var topic: Topic
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -34,6 +34,7 @@ struct TopicsListViewCell: View {
                 Spacer()
                 
                 VStack {
+                    printTopic(topic: topic)
                     Image(systemName: topic.status.image)
                         .font(.title)
                         .fontWeight(.bold)
@@ -49,6 +50,11 @@ struct TopicsListViewCell: View {
         }
         .listRowBackground(Color.accentColor)
         .listRowSeparator(.hidden)
+    }
+    
+    func printTopic(topic: Topic) -> EmptyView {
+        print("\(topic.subtitle) \(topic.title) \(topic.status)")
+        return EmptyView()
     }
 }
 
