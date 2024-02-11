@@ -12,7 +12,7 @@ import Kingfisher
 struct SentenceExerciseView: View {
     // MARK: - Properties
     @Binding var exercise: ToBeExercise
-    @State var isGapAnimating: Bool = false
+    @State private var isGapAnimating: Bool = false
     
     // MARK: - Body
     var body: some View {

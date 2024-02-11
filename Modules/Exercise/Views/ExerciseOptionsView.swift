@@ -10,12 +10,11 @@ import SwiftUI
 struct ExerciseOptionsView: View {
     // MARK: - Properties
     @Binding var exercise: ToBeExercise
-    @State var isBadAnswerAnimating: Bool = false
-    @State var isRightAnswerMoveAnimating: Bool = false
-    @State var isRightAnswerHideAnimating: Bool = false
-    @State var isBadAnswerAnimatingYValue: CGFloat = -5
-    @State var answer = ""
-    var dragAreaThreshold: CGFloat = 65
+    @State private var isBadAnswerAnimating: Bool = false
+    @State private var isRightAnswerMoveAnimating: Bool = false
+    @State private var isRightAnswerHideAnimating: Bool = false
+    @State private var isBadAnswerAnimatingYValue: CGFloat = -5
+    @State private var answer = ""
   
     // MARK: - Body
     var body: some View {

@@ -43,6 +43,8 @@
 		9A91E6482B626BE8000773C7 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6472B626BE8000773C7 /* FlowLayout.swift */; };
 		9A91E64B2B626C15000773C7 /* Arranger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E64A2B626C15000773C7 /* Arranger.swift */; };
 		9A91E6552B65230F000773C7 /* ExerciseOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E6542B65230F000773C7 /* ExerciseOptionsView.swift */; };
+		9AA0F2F42B79289A00FCCBF0 /* ExerciseDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0F2F32B79289A00FCCBF0 /* ExerciseDoneView.swift */; };
+		9AA0F2F62B792D6F00FCCBF0 /* ExerciseDoneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0F2F52B792D6F00FCCBF0 /* ExerciseDoneBuilder.swift */; };
 		9ADBACFC2B76B4FA0088AC9C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9ADBACFB2B76B4FA0088AC9C /* Kingfisher */; };
 		9AF1A03C2B69024E00564094 /* ToBeExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A03B2B69024E00564094 /* ToBeExerciseService.swift */; };
 /* End PBXBuildFile section */
@@ -104,6 +106,8 @@
 		9A91E6472B626BE8000773C7 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		9A91E64A2B626C15000773C7 /* Arranger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arranger.swift; sourceTree = "<group>"; };
 		9A91E6542B65230F000773C7 /* ExerciseOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseOptionsView.swift; sourceTree = "<group>"; };
+		9AA0F2F32B79289A00FCCBF0 /* ExerciseDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDoneView.swift; sourceTree = "<group>"; };
+		9AA0F2F52B792D6F00FCCBF0 /* ExerciseDoneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDoneBuilder.swift; sourceTree = "<group>"; };
 		9AF1A03B2B69024E00564094 /* ToBeExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBeExerciseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -298,6 +302,7 @@
 		9A91E62C2B5ED983000773C7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9AA0F2F22B79288300FCCBF0 /* ExerciseDone */,
 				9A4C4DD12B6D5642008843C5 /* TopicDescription */,
 				9A4C4DCA2B6D0336008843C5 /* TopicsList */,
 				9A91E6522B6522C4000773C7 /* Exercise */,
@@ -352,6 +357,15 @@
 				9AF1A03A2B69022F00564094 /* Services */,
 			);
 			path = Exercise;
+			sourceTree = "<group>";
+		};
+		9AA0F2F22B79288300FCCBF0 /* ExerciseDone */ = {
+			isa = PBXGroup;
+			children = (
+				9AA0F2F32B79289A00FCCBF0 /* ExerciseDoneView.swift */,
+				9AA0F2F52B792D6F00FCCBF0 /* ExerciseDoneBuilder.swift */,
+			);
+			path = ExerciseDone;
 			sourceTree = "<group>";
 		};
 		9AF1A03A2B69022F00564094 /* Services */ = {
@@ -519,6 +533,7 @@
 				9AF1A03C2B69024E00564094 /* ToBeExerciseService.swift in Sources */,
 				9A91E6242B5E91B5000773C7 /* NetworkManager.swift in Sources */,
 				9A4C4DDE2B6D7D71008843C5 /* TopicsListBuilder.swift in Sources */,
+				9AA0F2F42B79289A00FCCBF0 /* ExerciseDoneView.swift in Sources */,
 				9A4C4DCC2B6D035C008843C5 /* TopicsListView.swift in Sources */,
 				9A4C4DD92B6D7393008843C5 /* Colors.swift in Sources */,
 				9A4C4DD62B6D706E008843C5 /* Topic.swift in Sources */,
@@ -529,6 +544,7 @@
 				9A91E62B2B5E95AD000773C7 /* ToBeExercise.swift in Sources */,
 				9A4C4DD02B6D1331008843C5 /* AddTopicsService.swift in Sources */,
 				9A91E5F42B5E90CE000773C7 /* EnglishCourseApp.swift in Sources */,
+				9AA0F2F62B792D6F00FCCBF0 /* ExerciseDoneBuilder.swift in Sources */,
 				9A91E63A2B5EF02D000773C7 /* ExerciseBuilder.swift in Sources */,
 				9A91E63F2B5FCB34000773C7 /* ProcessingView.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum Screen: String, Identifiable {
-    case topicsList, topicDescription, exercise
+    case topicsList, topicDescription, exercise, exerciseDone
     
     var id: String {
         self.rawValue
@@ -57,6 +57,8 @@ class Coordinator: ObservableObject {
             TopicDescriptionBuilder().build()
         case .exercise:
             ExerciseBuilder().build()
+        case .exerciseDone:
+            ExerciseDoneBuilder().build()
         }
     }
 }

@@ -25,7 +25,9 @@ struct ExerciseView<ExerciseService: ExerciseServiceProtocol>: View {
         }
         .onAppear {
             viewModel.exercisesFinished = {
-                coordinator.popToRoot()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    coordinator.present(fullScreenCover: .exerciseDone)
+                }
             }
         }
         .background(

@@ -27,9 +27,7 @@ struct TopicDescriptionView: View {
                             .fontWeight(.bold)
                     )
             }
-
         }
-        
     }
 }
 
