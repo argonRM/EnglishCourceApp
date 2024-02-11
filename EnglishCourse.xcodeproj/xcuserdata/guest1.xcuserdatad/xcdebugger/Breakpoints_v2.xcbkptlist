@@ -396,8 +396,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
             landmarkName = "markTopicDone(context:)"
             landmarkType = "7">
             <Locations>
@@ -564,22 +564,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "61FC37C6-10D8-4E3D-9492-A75DC6931794"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "getExercise()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "49E424A6-ABBA-4199-AB5C-1894BF7840D9"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -587,8 +571,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "getExercise()"
             landmarkType = "7">
          </BreakpointContent>
@@ -629,100 +613,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D9A40362-7BBB-4699-91AF-852BD538E710"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "getImageFor(exercise:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D9A40362-7BBB-4699-91AF-852BD538E710 - 51f64b674d4d278b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EnglishCourse.ToBeExerciseService.getImagesForExecises() -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "1664">
-               </Location>
-               <Location
-                  uuid = "D9A40362-7BBB-4699-91AF-852BD538E710 - f6bf81f151d5c530"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in EnglishCourse.ToBeExerciseService.getImagesForExecises() -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "D9A40362-7BBB-4699-91AF-852BD538E710 - 8f0bb79cfc2860e6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #4 (EnglishCourse.GenerateImageResponse) -&gt; () in EnglishCourse.ToBeExerciseService.getImagesForExecises() -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "D9A40362-7BBB-4699-91AF-852BD538E710 - 3918107095b254c4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.Data, __C.NSURLResponse) throws -&gt; Foundation.Data in EnglishCourse.ToBeExerciseService.getImageFor(exercise: EnglishCourse.ToBeExercise, completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "133"
-                  endingLineNumber = "133"
-                  offsetFromSymbolStart = "228">
-               </Location>
-               <Location
-                  uuid = "D9A40362-7BBB-4699-91AF-852BD538E710 - 3918107095b254c4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.Data, __C.NSURLResponse) throws -&gt; Foundation.Data in EnglishCourse.ToBeExerciseService.getImageFor(exercise: EnglishCourse.ToBeExercise, completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "133"
-                  endingLineNumber = "133"
-                  offsetFromSymbolStart = "352">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E3B0D94D-F1FB-4639-9A9D-E1CCC8DD4A79"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
@@ -732,82 +623,36 @@
             endingLineNumber = "132"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E3B0D94D-F1FB-4639-9A9D-E1CCC8DD4A79 - 51f64b674d4d278b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EnglishCourse.ToBeExerciseService.getImagesForExecises() -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "1664">
-               </Location>
-               <Location
-                  uuid = "E3B0D94D-F1FB-4639-9A9D-E1CCC8DD4A79 - f6bf81f151d5c530"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in EnglishCourse.ToBeExerciseService.getImagesForExecises() -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "E3B0D94D-F1FB-4639-9A9D-E1CCC8DD4A79 - 8f0bb79cfc2860e6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #4 (EnglishCourse.GenerateImageResponse) -&gt; () in EnglishCourse.ToBeExerciseService.getImagesForExecises() -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "E3B0D94D-F1FB-4639-9A9D-E1CCC8DD4A79 - 3918107095b254e5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.Data, __C.NSURLResponse) throws -&gt; Foundation.Data in EnglishCourse.ToBeExerciseService.getImageFor(exercise: EnglishCourse.ToBeExercise, completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "132"
-                  endingLineNumber = "132"
-                  offsetFromSymbolStart = "88">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3B0D94D-F1FB-4639-9A9D-E1CCC8DD4A79"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "getImageFor(exercise:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2C4BAE01-0DBF-4F9B-A2F0-2A3F87E7518C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "getExercise()"
             landmarkType = "7">
             <Locations>
@@ -840,6 +685,21 @@
                   startingLineNumber = "91"
                   endingLineNumber = "91"
                   offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "2C4BAE01-0DBF-4F9B-A2F0-2A3F87E7518C - 38eb6c394e830a7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ToBeExerciseService.getExercise() -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -896,103 +756,39 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FC048C31-C4FD-4786-A3B6-B95201F03F9E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FC048C31-C4FD-4786-A3B6-B95201F03F9E - 51f64b674d4d2426"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EnglishCourse.ToBeExerciseService.getImagesForExecises() -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "1412">
-               </Location>
-               <Location
-                  uuid = "FC048C31-C4FD-4786-A3B6-B95201F03F9E - 57d8df1896e048e8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EnglishCourse.ToBeExerciseService.getImageFor(exercise: EnglishCourse.ToBeExercise, completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130"
-                  offsetFromSymbolStart = "948">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D0B7F8B0-D8FD-4B7B-B4F0-D0844AC51B27"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D0B7F8B0-D8FD-4B7B-B4F0-D0844AC51B27 - 8f0bb79cfc286043"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #4 (EnglishCourse.GenerateImageResponse) -&gt; () in EnglishCourse.ToBeExerciseService.getImagesForExecises() -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "548">
-               </Location>
-               <Location
-                  uuid = "D0B7F8B0-D8FD-4B7B-B4F0-D0844AC51B27 - 3918107095b2542f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.Data, __C.NSURLResponse) throws -&gt; Foundation.Data in EnglishCourse.ToBeExerciseService.getImageFor(exercise: EnglishCourse.ToBeExercise, completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "EnglishCourse"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "138"
-                  endingLineNumber = "138"
-                  offsetFromSymbolStart = "404">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "18013AFC-F36A-4181-B834-60083D88ED5B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
@@ -1000,6 +796,324 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "144"
             endingLineNumber = "144"
+            landmarkName = "getImageFor(exercise:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C401E760-075F-4C5F-80B3-1842677D60F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "ToBeExerciseService"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B0E3580-23EF-4A75-ACFE-85842B8B9D11"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "ToBeExerciseService"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3B0E3580-23EF-4A75-ACFE-85842B8B9D11 - 25dcf235c56ff2b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ToBeExerciseService.fklk() -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "3B0E3580-23EF-4A75-ACFE-85842B8B9D11 - 25dcf235c56ff2b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ToBeExerciseService.fklk() -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "3B0E3580-23EF-4A75-ACFE-85842B8B9D11 - 25dcf235c56ff2b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ToBeExerciseService.fklk() -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5B70443-76B1-4F0C-8DC6-FD62497DFEF7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coordinator/CoordinatorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D388583-0BA2-4A3C-975B-B03131ED3392"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "ToBeExerciseService"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "025629D6-48FE-4580-A1FF-BE0AE408B8C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "ToBeExerciseService"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "025629D6-48FE-4580-A1FF-BE0AE408B8C6 - 882a49b9eee7e127"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data, __C.NSURLResponse) throws -&gt; Foundation.Data in EnglishCourse.ToBeExerciseService.fklk() -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "025629D6-48FE-4580-A1FF-BE0AE408B8C6 - 882a49b9eee7e127"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data, __C.NSURLResponse) throws -&gt; Foundation.Data in EnglishCourse.ToBeExerciseService.fklk() -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "560">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "035B2A51-D44E-42B6-A28A-63EF8D69DD99"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "ToBeExerciseService"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "655CC6A6-0FCC-4DE0-8C49-5E3025BFC336"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "ToBeExerciseService"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "655CC6A6-0FCC-4DE0-8C49-5E3025BFC336 - 25dcf235c56ff35a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ToBeExerciseService.fklk() -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "652">
+               </Location>
+               <Location
+                  uuid = "655CC6A6-0FCC-4DE0-8C49-5E3025BFC336 - 882a49b9eee7e1db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data, __C.NSURLResponse) throws -&gt; Foundation.Data in EnglishCourse.ToBeExerciseService.fklk() -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "804F04EF-0534-4CDE-9403-19986DCF75F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "getImageFor(exercise:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65FE065C-9739-4815-A0EF-48E8737044D0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "getImageFor(exercise:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "65FE065C-9739-4815-A0EF-48E8737044D0 - d06235e782e14172"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (EnglishCourse.GenerateImageResponse) -&gt; () in EnglishCourse.ToBeExerciseService.getImageFor(exercise: EnglishCourse.ToBeExercise, completion: () -&gt; ()) -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  uuid = "65FE065C-9739-4815-A0EF-48E8737044D0 - d06235e782e14172"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (EnglishCourse.GenerateImageResponse) -&gt; () in EnglishCourse.ToBeExerciseService.getImageFor(exercise: EnglishCourse.ToBeExercise, completion: () -&gt; ()) -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "712">
+               </Location>
+               <Location
+                  uuid = "65FE065C-9739-4815-A0EF-48E8737044D0 - beb252ee5dbb577c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EnglishCourse.ToBeExercise) -&gt; Swift.Bool in closure #3 (EnglishCourse.GenerateImageResponse) -&gt; () in EnglishCourse.ToBeExerciseService.getImageFor(exercise: EnglishCourse.ToBeExercise, completion: () -&gt; ()) -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/Services/ToBeExerciseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59EA5A86-AA58-4D4A-9807-A495846ECFFE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
          </BreakpointContent>

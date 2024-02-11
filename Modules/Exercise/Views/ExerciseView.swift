@@ -28,6 +28,16 @@ struct ExerciseView<ExerciseService: ExerciseServiceProtocol>: View {
                 coordinator.popToRoot()
             }
         }
+        .background(
+            ZStack {
+                Image("boardImage")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                Color.black.opacity(0.4)
+                    .ignoresSafeArea()
+            }
+        )
     }
 }
 

@@ -22,11 +22,12 @@ struct ToBeExercise: Identifiable {
         }
     }
     
-    init(sentence: String, partsOfSentence: [String], validOption: String, options: [String], isDone: Bool = false) {
+    init(sentence: String, partsOfSentence: [String], validOption: String, options: [String], isDone: Bool = false, imageUrl: String? = nil) {
         self.sentence = sentence
         self.partsOfSentence = partsOfSentence
         self.validOption = validOption
         self.options = options
         self.isDone = isDone
+        self.imageUrl = imageUrl
     }
 }

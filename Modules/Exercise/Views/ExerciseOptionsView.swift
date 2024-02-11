@@ -59,13 +59,14 @@ struct ExerciseOptionsView: View {
                         .fontWeight(.bold)
                         .padding([.top, .bottom], 10)
                         .padding([.leading, .trailing], 20)
+                        .shadow(radius: 5)
                         .background(
                             ZStack {
                                 Capsule()
                                     .fill(getCapsuleFill(optionValue: string))
                                 
                                 Capsule()
-                                    .stroke(.gray, lineWidth: 4)
+                                    .stroke(.white.opacity(0.5), lineWidth: 4)
                             }
                         )
                         .offset(x: answerOffset(string).x, y: answerOffset(string).y)
@@ -84,7 +85,7 @@ private extension ExerciseOptionsView {
     }
     
     func getCapsuleFill(optionValue: String) -> some ShapeStyle {
-        (isBadAnswerAnimating && self.answer == optionValue) ? Color.red.opacity(0.9) : Color.gray.opacity(0.5)
+        (isBadAnswerAnimating && self.answer == optionValue) ? Color.red.opacity(0.9) : Color.white.opacity(0.15)
     }
     
     func checkRightAnswer(answer: String) -> Bool {

@@ -22,9 +22,7 @@ struct ExercisesTabView: View {
         .tabViewStyle(.page)
         .ignoresSafeArea()
         .background(
-            Color(.red)
-                .opacity(0.2)
-                .ignoresSafeArea()
+            Color.clear
         )
     }
 }

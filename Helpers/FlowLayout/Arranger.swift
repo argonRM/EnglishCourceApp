@@ -54,16 +54,16 @@ struct Arranger {
             }
         }
 
-        if alignment == .center {
-            for group in groups {
-                let totalWidth = group.reduce(0, { $0 + $1.frame.width + spacing })
-                let xOffset = (containerSize.width - totalWidth) / 2
-                
-                for i in group.indices {
-                    cells[cells.firstIndex(of: group[i])!].frame.origin.x += xOffset
-                }
-            }
-        }
+//        if alignment == .center {
+//            for group in groups {
+//                let totalWidth = group.reduce(0, { $0 + $1.frame.width + spacing })
+//                let xOffset = (containerSize.width - totalWidth) / 2
+//                
+//                for i in group.indices {
+//                    cells[cells.firstIndex(of: group[i])!].frame.origin.x += xOffset
+//                }
+//            }
+//        }
 
         let maxWidth = cells.reduce(0, { max($0, $1.frame.maxX) })
         return Result(
