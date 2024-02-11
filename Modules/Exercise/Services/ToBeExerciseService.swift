@@ -98,7 +98,7 @@ final class ToBeExerciseService: ExerciseServiceProtocol {
 //            })
 //            .store(in: &cancellables)
 //
-
+        fklk()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
                     self?.isProcessing = false
                     self?.exercises = [ToBeExercise(sentence: "I _ am a little good boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"], imageUrl: "https://oaidalleapiprodscus.blob.core.windows.net/private/org-QFhfqSCa8jPhmmS0vFLLDgGV/user-Xagl1mIy0hMJHcSNZFG1YYnk/img-ZMqpvywMRqxTtswBjfyi8do9.png?st=2024-02-09T16%3A31%3A02Z&se=2024-02-09T18%3A31%3A02Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-02-08T20%3A42%3A16Z&ske=2024-02-09T20%3A42%3A16Z&sks=b&skv=2021-08-06&sig=%2BmftlTLYIolnblwHeOt0c07R9WBfy0qYiV6556TR%2BjY%3D"),
@@ -150,30 +150,30 @@ final class ToBeExerciseService: ExerciseServiceProtocol {
             .store(in: &cancellables)
     }
     
-//    func fklk() {
-//        let requestModel = GenerateImageRequest(model: "dall-e-3", prompt: "Provide design of iOS mobile English course app screen. The screen shows an exercise, where there is a sentence with one missed word and 4 variants of a word one of them a user should put instead of a missed word. Also screen should show a picture that describes what a sentence means.", n: 1, size: "1792x1024")
-//
-//        networkManager.gptRequestPublisher(requestModel: requestModel, requestType: .generateImage)
-//            .tryMap { data, response in
-//                print(response)
-//                guard let httpResponse = response as? HTTPURLResponse,
-//                      httpResponse.statusCode == 200 else {
-//                    throw ToBeExerciseServiceError.badResponse
-//                }
-//
-//                return data
-//            }
-//            .decode(type: GenerateImageResponse.self, decoder: JSONDecoder())
-//            .sink(receiveCompletion: { _ in
-//                //completion()
-//            }, receiveValue: { [weak self] generateImageResponse in
-//                guard let self = self else { return }
-//                
-//                print(generateImageResponse.data.first?.url)
-//                
-//            })
-//            .store(in: &cancellables)
-//    }
+    func fklk() {
+        let requestModel = GenerateImageRequest(model: "dall-e-3", prompt: "You are a mobile app designer. Provide design of iOS mobile 'English course' App Icon. A main color should be beige", n: 1, size: "1024x1024")
+
+        networkManager.gptRequestPublisher(requestModel: requestModel, requestType: .generateImage)
+            .tryMap { data, response in
+                print(response)
+                guard let httpResponse = response as? HTTPURLResponse,
+                      httpResponse.statusCode == 200 else {
+                    throw ToBeExerciseServiceError.badResponse
+                }
+
+                return data
+            }
+            .decode(type: GenerateImageResponse.self, decoder: JSONDecoder())
+            .sink(receiveCompletion: { _ in
+                //completion()
+            }, receiveValue: { [weak self] generateImageResponse in
+                guard let self = self else { return }
+                
+                print(generateImageResponse.data.first?.url)
+                
+            })
+            .store(in: &cancellables)
+    }
 }
 
 // MARK: - Private

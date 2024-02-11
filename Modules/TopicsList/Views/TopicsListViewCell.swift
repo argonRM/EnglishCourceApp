@@ -27,6 +27,7 @@ struct TopicsListViewCell: View {
                     Text(topic.title)
                         .font(.title2)
                         .fontWeight(.heavy)
+                        .foregroundColor(topic.titleColor)
                 }
                 .padding(.leading, 15)
                 .padding([.top, .bottom], 3)

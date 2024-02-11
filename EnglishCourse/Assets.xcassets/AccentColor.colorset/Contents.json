@@ -2,13 +2,8 @@
   "colors" : [
     {
       "color" : {
-        "color-space" : "display-p3",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.102",
-          "green" : "0.106",
-          "red" : "0.137"
-        }
+        "platform" : "osx",
+        "reference" : "quaternaryLabelColor"
       },
       "idiom" : "universal"
     },
