@@ -124,7 +124,7 @@ final class ToBeExerciseService: ExerciseServiceProtocol {
     }
 
     func getImageFor(exercise: ToBeExercise, completion: @escaping () -> Void) {
-        let requestModel = GenerateImageRequest(model: "dall-e-2", prompt: "Generate an image that reflect the essence of the sentence <\(exercise.sentence)>. The image should be in cartoon format.", n: 1, size: "256x256")
+        let requestModel = GenerateImageRequest(model: "dall-e-3", prompt: "Generate an image that reflect the essence of the sentence <\(exercise.sentence)>. The image should be in cartoon format.", n: 1, size: "1024x1024")
 
         networkManager.gptRequestPublisher(requestModel: requestModel, requestType: .generateImage)
             .tryMap { data, response in

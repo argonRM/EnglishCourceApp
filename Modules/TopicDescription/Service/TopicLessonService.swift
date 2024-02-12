@@ -97,7 +97,7 @@ final class TopicLessonService: ObservableObject {
                     isProcessing = false
                 }
             }, receiveValue: { [weak self] description in
-                guard let self else { return }
+                guard let self, !description.isEmpty else { return }
                 let changedTopic = self.topicLesson
                 changedTopic.description = description
                 self.topicLesson = changedTopic
