@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ExerciseView<ExerciseService: ExerciseServiceProtocol>: View {
     @StateObject var viewModel: ExerciseViewModel<ExerciseService>
-    @State private var processingAnimation = false
     @EnvironmentObject private var coordinator: Coordinator
    
     

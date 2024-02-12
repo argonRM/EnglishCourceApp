@@ -1,5 +1,5 @@
 //
-//  ToBeSentensesResponse.swift
+//  GeneralGTPResponse.swift
 //  EnglishCourse
 //
 //  Created by Roman Maiboroda on 22.01.2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ToBeSentenсesResponse: Codable {
+struct GeneralGTPResponse: Codable {
     let choices: [Choice]
     let created: TimeInterval
     let id: String

@@ -3,7 +3,7 @@
     {
       "color" : {
         "platform" : "osx",
-        "reference" : "quaternaryLabelColor"
+        "reference" : "controlColor"
       },
       "idiom" : "universal"
     },
@@ -15,13 +15,8 @@
         }
       ],
       "color" : {
-        "color-space" : "display-p3",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.784",
-          "green" : "0.867",
-          "red" : "0.914"
-        }
+        "platform" : "osx",
+        "reference" : "quaternaryLabelColor"
       },
       "idiom" : "universal"
     }

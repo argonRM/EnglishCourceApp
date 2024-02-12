@@ -1,5 +1,5 @@
 //
-//  ToBeSentensesRequest.swift
+//  GeneralGTPRequest.swift
 //  EnglishCourse
 //
 //  Created by Roman Maiboroda on 22.01.2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ToBeExerciseRequest: Codable {
+struct GeneralGTPRequest: Codable {
     let model: String
     let messages: [Message]
   

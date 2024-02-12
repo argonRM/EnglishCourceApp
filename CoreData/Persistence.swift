@@ -19,6 +19,8 @@ struct PersistenceController {
             toBeTopic.title = "To Be"
             toBeTopic.subtitle = "Present Simple"
             toBeTopic.date = Date()
+            toBeTopic.id = UUID()
+            toBeTopic.topicDescription = "The completions endpoint also supports inserting text by providing a suffix in addition to the standard prompt which is treated as a prefix. This need naturally arises when writing long-form text, transitioning between paragraphs, following an outline, or guiding the model towards an ending. This also works on code, and can be used to insert in the middle of a function or file."
         }
         do {
             try viewContext.save()

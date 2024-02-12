@@ -15,6 +15,23 @@ struct CoordinatorView: View {
             coordinator.build(screen: .topicsList)
                 .navigationDestination(for: Screen.self) { screen in
                     coordinator.build(screen: screen)
+                        .toolbarBackground(.hidden, for: .navigationBar)
+                        .navigationBarBackButtonHidden()
+                        .toolbar {
+                            ToolbarItem(placement: .topBarLeading) {
+                                    //List
+                                    Button {
+                                    
+                                        coordinator.pop()
+                                    } label: {
+                                        Image(systemName: "arrow.backward.circle")
+                                            .font(.title)
+                                            .foregroundColor(.white)
+                                            
+                                    }
+                                    .shadow(radius: 10)
+                            }//: toolbar buttons
+                        }//: toolbar
                 }
                 .sheet(item: $coordinator.sheet) { screen in
                     coordinator.build(screen: screen)

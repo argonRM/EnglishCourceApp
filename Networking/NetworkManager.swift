@@ -25,7 +25,7 @@ struct NetworkManager {
         }
         
         private var apiKey: String {
-            "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"
+            ""
         }
         
         private var method: String {
@@ -97,7 +97,7 @@ private extension NetworkManager {
 //                    let jsonResponse = try JSONSerialization.jsonObject(with: data, options: [])
 //                    print("Response: \(jsonResponse)")
 //
-//                    let response = try JSONDecoder().decode(ToBeSentenсesResponse.self, from: data)
+//                    let response = try JSONDecoder().decode(GeneralGTPResponse.self, from: data)
 //                    print(response.choices.first?.message)
 //
 //                    let sentenceOption = self.parseSentenceOptionsString(response.choices.first?.message.content ?? "")
@@ -165,7 +165,7 @@ private extension NetworkManager {
 //    }
 //
 //    func getRequestBody() -> Data {
-//        let request = ToBeExerciseRequest(
+//        let request = GeneralGTPRequest(
 //            model: "gpt-3.5-turbo",
 //            messages: [ToBeExerciseRequest.Message(role: "user", content: "Provide me 10 sentences to train 'to be' topic in Present Simple. For example 'I _ a boy'. After the sentence instead of _ provide 4 to be words that a student needs to past. Separate them by | symbol. Put answers into (). The right answer should be in the next format 'am-ok'. Example: 'I _ a boy.(am-ok|she|he|it)'")])
 //

@@ -54,7 +54,7 @@ class Coordinator: ObservableObject {
         case .topicsList:
             TopicsListBuilder().build()
         case .topicDescription:
-            TopicDescriptionBuilder().build()
+            TopicLessonBuilder().build()
         case .exercise:
             ExerciseBuilder().build()
         case .exerciseDone:

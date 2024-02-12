@@ -13,6 +13,7 @@ class Topic: ObservableObject, Identifiable {
     let title: String
     let date: Date
     var status: Status
+    var description: String = ""
     let id: UUID
     
     init(topicManagedModel: TopicManagedModel) {
@@ -21,13 +22,21 @@ class Topic: ObservableObject, Identifiable {
         self.date = topicManagedModel.date ?? Date()
         self.status = Status(rawValue: Int(topicManagedModel.status)) ?? .start
         self.id = topicManagedModel.id ?? UUID()
+        self.description = topicManagedModel.topicDescription ?? ""
     }
     
-    //for preview
     init() {
         self.status = .inProgress
-        self.title = "To Be"
-        self.subtitle = "Present Simple"
+        self.title = ""
+        self.subtitle = ""
+        self.date = Date()
+        self.id = UUID()
+    }
+    
+    init(title: String, subtitle: String) {
+        self.status = .inProgress
+        self.title = title
+        self.subtitle = subtitle
         self.date = Date()
         self.id = UUID()
     }
