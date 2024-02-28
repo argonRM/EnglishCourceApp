@@ -9,19 +9,7 @@ import Foundation
 import Combine
 import CoreData
 
-final class ToBeExerciseService: ExerciseServiceProtocol {
-    var exercisesPublisher: Published<[ToBeExercise]>.Publisher {
-        $exercises
-    }
-    
-    var isErrorOccurredPublisher: Published<Bool>.Publisher {
-        $isErrorOccurred
-    }
-    
-    var isProcessingPublisher: Published<Bool>.Publisher {
-        $isProcessing
-    }
-
+final class ExerciseService {
     private var networkManager: NetworkManager
     private var context: NSManagedObjectContext
     @Published var exercises: [ToBeExercise] = []
@@ -45,12 +33,12 @@ final class ToBeExerciseService: ExerciseServiceProtocol {
         markTopicDone(context: context)
     }
     
-    func getExercise() {
+    func getExercise(for topic: Topic) {
         isProcessing = true
 
         let requestModel = GeneralGTPRequest(
             model: "gpt-3.5-turbo",
-            messages: [GeneralGTPRequest.Message(role: "user", content: "You are an English teacher. Provide me 3 sentences to train 'to be' topic in Present Simple. I forbid you to numerate sentences. The sentence should have not more than 6 words. For example 'I _ a boy'. After the sentence instead of _ provide 4 to be words that a student needs to past. Separate them by | symbol. Put answers into (). The right answer should be in the next format 'am-ok'. Example: 'I _ a boy.(am-ok|she|he|it)'")])
+            messages: [GeneralGTPRequest.Message(role: "user", content: topic.exerciseRequest)])
 
         networkManager.gptRequestPublisher(requestModel: requestModel, requestType: .toBeSentences)
             .tryMap { data, response in
@@ -177,7 +165,7 @@ final class ToBeExerciseService: ExerciseServiceProtocol {
 }
 
 // MARK: - Private
-private extension ToBeExerciseService {
+private extension ExerciseService {
     func parseSentenceOptionsString(_ input: String?) -> [ToBeExercise]? {
         guard let input else { return nil }
         let lines = input.components(separatedBy: "\n")
@@ -235,7 +223,7 @@ private extension ToBeExerciseService {
     }
 }
 
-extension ToBeExerciseService {
+extension ExerciseService {
     enum ToBeExerciseServiceError: Error {
         case badResponse
     }

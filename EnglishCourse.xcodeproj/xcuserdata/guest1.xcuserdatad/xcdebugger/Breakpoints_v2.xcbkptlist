@@ -396,8 +396,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
             landmarkName = "markTopicDone(context:)"
             landmarkType = "7">
             <Locations>
@@ -508,8 +508,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "getExercise()"
             landmarkType = "7">
             <Locations>
@@ -571,8 +571,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "getExercise()"
             landmarkType = "7">
          </BreakpointContent>
@@ -587,8 +587,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "getExercise()"
             landmarkType = "7">
          </BreakpointContent>
@@ -603,8 +603,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "getExercise()"
             landmarkType = "7">
          </BreakpointContent>
@@ -619,8 +619,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -635,8 +635,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -651,8 +651,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "getExercise()"
             landmarkType = "7">
             <Locations>
@@ -762,8 +762,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -778,8 +778,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -794,8 +794,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -810,9 +810,9 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
-            landmarkName = "ToBeExerciseService"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "ExerciseService"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -826,9 +826,9 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "ToBeExerciseService"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "ExerciseService"
             landmarkType = "3">
             <Locations>
                <Location
@@ -905,9 +905,9 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
-            landmarkName = "ToBeExerciseService"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "ExerciseService"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -921,9 +921,9 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "ToBeExerciseService"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "ExerciseService"
             landmarkType = "3">
             <Locations>
                <Location
@@ -969,9 +969,9 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "ToBeExerciseService"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "ExerciseService"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -985,9 +985,9 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "ToBeExerciseService"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "ExerciseService"
             landmarkType = "3">
             <Locations>
                <Location
@@ -1033,8 +1033,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1049,8 +1049,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1157,8 +1157,8 @@
             filePath = "Modules/Exercise/Services/ToBeExerciseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "getImageFor(exercise:completion:)"
             landmarkType = "7">
             <Locations>
@@ -1205,9 +1205,9 @@
             filePath = "Modules/TopicDescription/Service/TopicLessonService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "getTopicLesson()"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "getTopicLesson(for:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1246,22 +1246,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "689C9662-2BE9-4C01-A300-000C92A6A6F7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Modules/TopicDescription/Service/TopicLessonService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "getTopic(forceFetch:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "ED0A1F6C-A7A7-45E5-BB3D-91F9DEF4262C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1269,9 +1253,9 @@
             filePath = "Modules/TopicDescription/Service/TopicLessonService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "getTopicLesson()"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "getTopicLesson(for:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1317,9 +1301,9 @@
             filePath = "Modules/TopicDescription/Service/TopicLessonService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "getTopicLesson()"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getTopicLesson(for:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1365,10 +1349,88 @@
             filePath = "Modules/TopicDescription/Service/TopicLessonService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "getTopicLesson()"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getTopicLesson(for:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE28D31F-4598-45B4-A7C8-6562762412A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Exercise/ViewModel/ExerciseViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "init(topic:exerciseService:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EE28D31F-4598-45B4-A7C8-6562762412A0 - bdae5125ad1f54c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ExerciseViewModel.__allocating_init(exerciseService: &#x3c4;_0_0) -&gt; EnglishCourse.ExerciseViewModel&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/ViewModel/ExerciseViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "EE28D31F-4598-45B4-A7C8-6562762412A0 - 8b8c6c97719e54b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ExerciseViewModel.init(exerciseService: &#x3c4;_0_0) -&gt; EnglishCourse.ExerciseViewModel&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/ViewModel/ExerciseViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "EE28D31F-4598-45B4-A7C8-6562762412A0 - ffa46ebc66fd5cc0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ExerciseViewModel.__allocating_init(topic: EnglishCourse.Topic, exerciseService: EnglishCourse.ExerciseService) -&gt; EnglishCourse.ExerciseViewModel"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/ViewModel/ExerciseViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "EE28D31F-4598-45B4-A7C8-6562762412A0 - db81a8f2ed02e322"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.ExerciseViewModel.init(topic: EnglishCourse.Topic, exerciseService: EnglishCourse.ExerciseService) -&gt; EnglishCourse.ExerciseViewModel"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/Exercise/ViewModel/ExerciseViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

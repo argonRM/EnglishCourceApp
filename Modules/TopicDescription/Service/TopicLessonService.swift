@@ -23,36 +23,22 @@ final class TopicLessonService: ObservableObject {
         self.context = context
     }
     
-    func getTopic(forceFetch: Bool = false) {
+    func getDescription(for topic: Topic, forceFetch: Bool = false) {
         isProcessing = true
-        let request = NSFetchRequest<TopicManagedModel>(entityName: "TopicManagedModel")
-        request.predicate = NSPredicate(format: "subtitle == %@ AND title == %@", "Present Simple", "To Be")
-        
-        do {
-            let topics = try context.fetch(request)
-            
-            if let firstTopic = topics.first {
-                topicLesson = Topic(topicManagedModel: firstTopic)
-                if topicLesson.description.isEmpty || forceFetch {
-                    getTopicLesson()
-                } else {
-                    self.isProcessing = false
-                }
-            }
-        } catch {
-            self.isErrorOccurred = true
+        topicLesson = topic
+        if topic.description.isEmpty || forceFetch {
+            getTopicLesson(for: topic)
+        } else {
             self.isProcessing = false
-            print("Error fetching or saving data: \(error.localizedDescription)")
         }
     }
     
-    private func getTopicLesson() {
+    private func getTopicLesson(for topic: Topic) {
         isProcessing = true
         
         let requestModel = GeneralGTPRequest(
             model: "gpt-3.5-turbo",
-            messages: [GeneralGTPRequest.Message(role: "user", content: "Ти вчитель англійської. Згенеруй пояснення теми 'to be' для часу Present Simple.")])
-        //You are an English teacher. Provide me an explanation of the 'to be' topic in Present Simple.
+            messages: [GeneralGTPRequest.Message(role: "user", content: topic.lessonRequest)])
         
         networkManager.gptRequestPublisher(requestModel: requestModel, requestType: .toBeSentences)
             .tryMap { data, response in
@@ -101,14 +87,14 @@ final class TopicLessonService: ObservableObject {
                 let changedTopic = self.topicLesson
                 changedTopic.description = description
                 self.topicLesson = changedTopic
-                self.updateTopic(description: description)
+                self.updateTopic(topic, description: description)
             })
             .store(in: &cancellables)
     }
     
-    func updateTopic(description: String) {
+    func updateTopic(_ topic: Topic, description: String) {
         let request = NSFetchRequest<TopicManagedModel>(entityName: "TopicManagedModel")
-        request.predicate = NSPredicate(format: "subtitle == %@ AND title == %@", "Present Simple", "To Be")
+        request.predicate = NSPredicate(format: "subtitle == %@ AND title == %@", topic.subtitle, topic.title)
 
         do {
             let topics = try context.fetch(request)

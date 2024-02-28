@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-enum Screen: String, Identifiable {
-    case topicsList, topicDescription, exercise, exerciseDone
-    
-    var id: String {
-        self.rawValue
-    }
-}
-
 class Coordinator: ObservableObject {
     @Published var path = NavigationPath()
     @Published var sheet: Screen?
@@ -53,10 +45,10 @@ class Coordinator: ObservableObject {
         switch screen {
         case .topicsList:
             TopicsListBuilder().build()
-        case .topicDescription:
-            TopicLessonBuilder().build()
-        case .exercise:
-            ExerciseBuilder().build()
+        case .topicDescription(let topic):
+            TopicLessonBuilder(topic: topic).build()
+        case .exercise(let topic):
+            ExerciseBuilder(topic: topic).build()
         case .exerciseDone:
             ExerciseDoneBuilder().build()
         }

@@ -11,15 +11,16 @@ import SwiftUI
 
 final class TopicLessonViewModel: ObservableObject {
     @Published private var topicLessonService: TopicLessonService
-    @Published var topic = Topic()
+    @Published var topic: Topic
     @Published var isErrorOccurred: Bool = false
     @Published var isProcessing = false
     private var cancellables: Set<AnyCancellable> = []
     
-    init(topicLessonService: TopicLessonService) {
+    init(topic: Topic, topicLessonService: TopicLessonService) {
         self.topicLessonService = topicLessonService
+        self.topic = topic
         setupPublishers()
-        self.topicLessonService.getTopic()
+        self.topicLessonService.getDescription(for: topic)
     }
     
     func setupPublishers() {
@@ -38,6 +39,6 @@ final class TopicLessonViewModel: ObservableObject {
     }
     
     func regenerateTopicDescription() {
-        topicLessonService.getTopic(forceFetch: true)
+        topicLessonService.getDescription(for: topic, forceFetch: true)
     }
 }

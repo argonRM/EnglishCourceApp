@@ -9,34 +9,36 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class ExerciseViewModel<ExerciseService>: ObservableObject where ExerciseService: ExerciseServiceProtocol {
+final class ExerciseViewModel: ObservableObject {
     
     @Published private var exerciseService: ExerciseService
     private var cancellables: Set<AnyCancellable> = []
     @Published var exercises: [ToBeExercise] = []
     @Published var isErrorOccurred: Bool = false
     @Published var isProcessing = false
+    @Published var topic: Topic
     
     var exercisesFinished: (()->())?
     
-    init(exerciseService: ExerciseService) {
+    init(topic: Topic, exerciseService: ExerciseService) {
         self.exerciseService = exerciseService
-        self.exerciseService.getExercise()
+        self.topic = topic
+        self.exerciseService.getExercise(for: topic)
         
         self.setupPublishers()
 
     }
     
     func setupPublishers() {
-        exerciseService.exercisesPublisher
+        exerciseService.$exercises
             .assign(to: \.exercises, on: self)
             .store(in: &cancellables)
         
-        exerciseService.isErrorOccurredPublisher
+        exerciseService.$isErrorOccurred
             .assign(to: \.isErrorOccurred, on: self)
                         .store(in: &cancellables)
         
-        exerciseService.isProcessingPublisher
+        exerciseService.$isProcessing
             .assign(to: \.isProcessing, on: self)
                         .store(in: &cancellables)
         

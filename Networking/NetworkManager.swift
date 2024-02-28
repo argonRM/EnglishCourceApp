@@ -25,7 +25,7 @@ struct NetworkManager {
         }
         
         private var apiKey: String {
-            ""
+            "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"
         }
         
         private var method: String {

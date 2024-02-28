@@ -8,6 +8,12 @@
 import SwiftUI
 
 class ExerciseBuilder: ScreenBuilder {
+    let topic: Topic
+    
+    init(topic: Topic) {
+        self.topic = topic
+    }
+    
     public func build() -> AnyView {
         return initView()
     }
@@ -15,8 +21,8 @@ class ExerciseBuilder: ScreenBuilder {
     private func initView() -> AnyView {
         let networkManager: NetworkManager = NetworkManager()
         let viewContext = PersistenceController.shared.container.viewContext
-        let toBeExerciseService = ToBeExerciseService(networkManager: networkManager, context: viewContext)
-        let viewModel = ExerciseViewModel(exerciseService: toBeExerciseService)
+        let toBeExerciseService = ExerciseService(networkManager: networkManager, context: viewContext)
+        let viewModel = ExerciseViewModel(topic: topic, exerciseService: toBeExerciseService)
         let view = ExerciseView(viewModel: viewModel)
         
         return AnyView(view)

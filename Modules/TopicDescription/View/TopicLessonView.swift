@@ -43,7 +43,7 @@ struct TopicLessonView: View {
                 }
                 
                 Button {
-                    coordinator.push(.exercise)
+                    coordinator.push(.exercise(viewModel.topic))
                 } label: {
                     RoundedRectangle(cornerRadius: 20)
                         .frame(height: 50)
@@ -93,7 +93,7 @@ struct TopicDescriptionView_Previews: PreviewProvider {
     }
     
     static func getViewModel() -> TopicLessonViewModel {
-        let viewModel = TopicLessonViewModel(topicLessonService: TopicLessonService(networkManager: NetworkManager(), context: PersistenceController.preview.container.viewContext))
+        let viewModel = TopicLessonViewModel(topic: Topic(title: "ToBe", subtitle: "Present Simple"), topicLessonService: TopicLessonService(networkManager: NetworkManager(), context: PersistenceController.preview.container.viewContext))
 
         return viewModel
     }

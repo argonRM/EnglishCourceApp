@@ -22,7 +22,7 @@ struct TopicsListView: View {
                 printTopic(topic: topic)
                 TopicsListViewCell(topic: topic)
                     .onTapGesture {
-                        coordinator.push(.topicDescription)
+                        coordinator.push(.topicDescription(topic))
                     }
             }
             

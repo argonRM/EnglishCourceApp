@@ -10,6 +10,12 @@ import Foundation
 import SwiftUI
 
 class TopicLessonBuilder: ScreenBuilder {
+    let topic: Topic
+    
+    init(topic: Topic) {
+        self.topic = topic
+    }
+    
     public func build() -> AnyView {
         return initView()
     }
@@ -18,7 +24,7 @@ class TopicLessonBuilder: ScreenBuilder {
         let networkManager: NetworkManager = NetworkManager()
         let viewContext = PersistenceController.shared.container.viewContext
         let topicLessonService = TopicLessonService(networkManager: networkManager, context: viewContext)
-        let topicLessonViewModel = TopicLessonViewModel(topicLessonService: topicLessonService)
+        let topicLessonViewModel = TopicLessonViewModel(topic: topic, topicLessonService: topicLessonService)
         let view = TopicLessonView(viewModel: topicLessonViewModel)
         
         return AnyView(view)

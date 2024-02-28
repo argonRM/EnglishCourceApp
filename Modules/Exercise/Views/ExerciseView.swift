@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ExerciseView<ExerciseService: ExerciseServiceProtocol>: View {
-    @StateObject var viewModel: ExerciseViewModel<ExerciseService>
+struct ExerciseView: View {
+    @StateObject var viewModel: ExerciseViewModel
     @EnvironmentObject private var coordinator: Coordinator
    
     
@@ -45,6 +45,6 @@ struct ExerciseView<ExerciseService: ExerciseServiceProtocol>: View {
 //MARK: - Preview
 struct ToBeExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseView(viewModel: ExerciseViewModel(exerciseService: ToBeExerciseService(networkManager: NetworkManager(), context: PersistenceController.preview.container.viewContext)))
+        ExerciseView(viewModel: ExerciseViewModel(topic: Topic(title: "To Be", subtitle: "Present Simple"), exerciseService: ExerciseService(networkManager: NetworkManager(), context: PersistenceController.preview.container.viewContext)))
     }
 }
