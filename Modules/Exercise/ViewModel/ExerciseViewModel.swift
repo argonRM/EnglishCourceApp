@@ -13,6 +13,7 @@ final class ExerciseViewModel: ObservableObject {
     
     @Published private var exerciseService: ExerciseService
     private var cancellables: Set<AnyCancellable> = []
+    private var cancellable: AnyCancellable?
     @Published var exercises: [ToBeExercise] = []
     @Published var isErrorOccurred: Bool = false
     @Published var isProcessing = false
@@ -42,12 +43,12 @@ final class ExerciseViewModel: ObservableObject {
             .assign(to: \.isProcessing, on: self)
                         .store(in: &cancellables)
         
-        $exercises
+        cancellable = $exercises
             .sink(receiveValue: { [weak self] exercises in
-                guard exercises.count > 0, exercises.map(\.isDone).allSatisfy({ $0 }) == true else { return }
-                self?.exerciseService.markTopicDone()
-                self?.exercisesFinished?()
+                guard let self, exercises.count > 0, exercises.map(\.isDone).allSatisfy({ $0 }) == true else { return }
+                cancellable?.cancel()
+                self.exerciseService.markTopicDone(self.topic)
+                self.exercisesFinished?()
             })
-            .store(in: &cancellables)
     }
 }

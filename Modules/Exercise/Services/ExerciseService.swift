@@ -29,70 +29,70 @@ final class ExerciseService {
         return exercises.map(\.isDone).allSatisfy { $0 }
     }
     
-    func markTopicDone() {
-        markTopicDone(context: context)
+    func markTopicDone(_ topic: Topic) {
+        markTopicDone(topic, context: context)
     }
     
     func getExercise(for topic: Topic) {
         isProcessing = true
 
-        let requestModel = GeneralGTPRequest(
-            model: "gpt-3.5-turbo",
-            messages: [GeneralGTPRequest.Message(role: "user", content: topic.exerciseRequest)])
-
-        networkManager.gptRequestPublisher(requestModel: requestModel, requestType: .toBeSentences)
-            .tryMap { data, response in
-                print(response)
-                guard let httpResponse = response as? HTTPURLResponse,
-                      httpResponse.statusCode == 200 else {
-                    throw ToBeExerciseServiceError.badResponse
-                }
-
-                return data
-            }
-
-            .decode(type: GeneralGTPResponse.self, decoder: JSONDecoder())
-            .breakpoint(receiveOutput: { receiveOutput in
-                print(receiveOutput)
-                return false
-            })
-            .compactMap { self.parseSentenceOptionsString($0.choices.first?.message.content) }
-            .breakpoint(receiveOutput: { receiveOutput in
-                print(receiveOutput)
-                return false
-            })
-            .receive(on: DispatchQueue.main)
-            .mapError { error -> Error in
-                print(error)
-                self.isErrorOccurred = true
-                self.isProcessing = false
-                return error
-            }
-            .catch { error -> AnyPublisher<[ToBeExercise], Error> in
-                return Just([]).setFailureType(to: Error.self).eraseToAnyPublisher()
-            }
-            .sink(receiveCompletion: { [weak self] completion in
-                guard let self else { return }
-                switch completion {
-                case .finished:
-                    self.getImagesForExecises()
-                case .failure(let error):
-                    print(error)
-                    isErrorOccurred = true
-                    isProcessing = false
-                }
-            }, receiveValue: { [weak self] exercises in
-                self?.exercises = exercises
-            })
-            .store(in: &cancellables)
+//        let requestModel = GeneralGTPRequest(
+//            model: "gpt-3.5-turbo",
+//            messages: [GeneralGTPRequest.Message(role: "user", content: topic.exerciseRequest)])
+//
+//        networkManager.gptRequestPublisher(requestModel: requestModel, requestType: .toBeSentences)
+//            .tryMap { data, response in
+//                print(response)
+//                guard let httpResponse = response as? HTTPURLResponse,
+//                      httpResponse.statusCode == 200 else {
+//                    throw ToBeExerciseServiceError.badResponse
+//                }
+//
+//                return data
+//            }
+//
+//            .decode(type: GeneralGTPResponse.self, decoder: JSONDecoder())
+//            .breakpoint(receiveOutput: { receiveOutput in
+//                print(receiveOutput)
+//                return false
+//            })
+//            .compactMap { self.parseSentenceOptionsString($0.choices.first?.message.content) }
+//            .breakpoint(receiveOutput: { receiveOutput in
+//                print(receiveOutput)
+//                return false
+//            })
+//            .receive(on: DispatchQueue.main)
+//            .mapError { error -> Error in
+//                print(error)
+//                self.isErrorOccurred = true
+//                self.isProcessing = false
+//                return error
+//            }
+//            .catch { error -> AnyPublisher<[ToBeExercise], Error> in
+//                return Just([]).setFailureType(to: Error.self).eraseToAnyPublisher()
+//            }
+//            .sink(receiveCompletion: { [weak self] completion in
+//                guard let self else { return }
+//                switch completion {
+//                case .finished:
+//                    self.getImagesForExecises()
+//                case .failure(let error):
+//                    print(error)
+//                    isErrorOccurred = true
+//                    isProcessing = false
+//                }
+//            }, receiveValue: { [weak self] exercises in
+//                self?.exercises = exercises
+//            })
+//            .store(in: &cancellables)
 //
        // fklk()
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
-//                    self?.isProcessing = false
-//                    self?.exercises = [ToBeExercise(sentence: "I _ am a little good boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"], imageUrl: "https://oaidalleapiprodscus.blob.core.windows.net/private/org-QFhfqSCa8jPhmmS0vFLLDgGV/user-Xagl1mIy0hMJHcSNZFG1YYnk/img-ZMqpvywMRqxTtswBjfyi8do9.png?st=2024-02-09T16%3A31%3A02Z&se=2024-02-09T18%3A31%3A02Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-02-08T20%3A42%3A16Z&ske=2024-02-09T20%3A42%3A16Z&sks=b&skv=2021-08-06&sig=%2BmftlTLYIolnblwHeOt0c07R9WBfy0qYiV6556TR%2BjY%3D"),
-//                                      ToBeExercise(sentence: "I _ am a good student studying in a University.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"], imageUrl: "https://oaidalleapiprodscus.blob.core.windows.net/private/org-QFhfqSCa8jPhmmS0vFLLDgGV/user-Xagl1mIy0hMJHcSNZFG1YYnk/img-QPWwRPcl3Ek8jPYSZbMQBcBD.png?st=2024-02-09T16%3A41%3A00Z&se=2024-02-09T18%3A41%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-02-09T00%3A23%3A45Z&ske=2024-02-10T00%3A23%3A45Z&sks=b&skv=2021-08-06&sig=7Y%2Bcrdlb6ppCqqFP%2Bv5YwC60a9L7pGBB/Dr/LZeemQY%3D"),
-//                                      ToBeExercise(sentence: "I _ am a lazy person.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"], imageUrl: "https://oaidalleapiprodscus.blob.core.windows.net/private/org-QFhfqSCa8jPhmmS0vFLLDgGV/user-Xagl1mIy0hMJHcSNZFG1YYnk/img-ZMqpvywMRqxTtswBjfyi8do9.png?st=2024-02-09T16%3A31%3A02Z&se=2024-02-09T18%3A31%3A02Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-02-08T20%3A42%3A16Z&ske=2024-02-09T20%3A42%3A16Z&sks=b&skv=2021-08-06&sig=%2BmftlTLYIolnblwHeOt0c07R9WBfy0qYiV6556TR%2BjY%3D")]
-//                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+                    self?.isProcessing = false
+                    self?.exercises = [ToBeExercise(sentence: "I _ am a little good boy.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"], imageUrl: "https://oaidalleapiprodscus.blob.core.windows.net/private/org-QFhfqSCa8jPhmmS0vFLLDgGV/user-Xagl1mIy0hMJHcSNZFG1YYnk/img-ZMqpvywMRqxTtswBjfyi8do9.png?st=2024-02-09T16%3A31%3A02Z&se=2024-02-09T18%3A31%3A02Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-02-08T20%3A42%3A16Z&ske=2024-02-09T20%3A42%3A16Z&sks=b&skv=2021-08-06&sig=%2BmftlTLYIolnblwHeOt0c07R9WBfy0qYiV6556TR%2BjY%3D"),
+                                      ToBeExercise(sentence: "I _ am a good student studying in a University.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"], imageUrl: "https://oaidalleapiprodscus.blob.core.windows.net/private/org-QFhfqSCa8jPhmmS0vFLLDgGV/user-Xagl1mIy0hMJHcSNZFG1YYnk/img-QPWwRPcl3Ek8jPYSZbMQBcBD.png?st=2024-02-09T16%3A41%3A00Z&se=2024-02-09T18%3A41%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-02-09T00%3A23%3A45Z&ske=2024-02-10T00%3A23%3A45Z&sks=b&skv=2021-08-06&sig=7Y%2Bcrdlb6ppCqqFP%2Bv5YwC60a9L7pGBB/Dr/LZeemQY%3D"),
+                                      ToBeExercise(sentence: "I _ am a lazy person.", partsOfSentence: ["I", "_", "a", "good", "little", "boy."],  validOption: "am", options: ["am", "is", "it", "does"], imageUrl: "https://oaidalleapiprodscus.blob.core.windows.net/private/org-QFhfqSCa8jPhmmS0vFLLDgGV/user-Xagl1mIy0hMJHcSNZFG1YYnk/img-ZMqpvywMRqxTtswBjfyi8do9.png?st=2024-02-09T16%3A31%3A02Z&se=2024-02-09T18%3A31%3A02Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-02-08T20%3A42%3A16Z&ske=2024-02-09T20%3A42%3A16Z&sks=b&skv=2021-08-06&sig=%2BmftlTLYIolnblwHeOt0c07R9WBfy0qYiV6556TR%2BjY%3D")]
+                }
     }
     
    
@@ -206,15 +206,16 @@ private extension ExerciseService {
         return separatedStrings
     }
     
-    func markTopicDone(context: NSManagedObjectContext) {
+    func markTopicDone(_ topic: Topic, context: NSManagedObjectContext) {
         let request = NSFetchRequest<TopicManagedModel>(entityName: "TopicManagedModel")
-        request.predicate = NSPredicate(format: "subtitle == %@ AND title == %@", "Present Simple", "To Be")
+        request.predicate = NSPredicate(format: "subtitle == %@ AND title == %@", topic.subtitle, topic.title)
 
         do {
             let topics = try context.fetch(request)
             
             if let firstTopic = topics.first {
                 firstTopic.status = Int16(Topic.Status.finished.rawValue)
+                topic.status = .finished
                 try context.save()
             }
         } catch {

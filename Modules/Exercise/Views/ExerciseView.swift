@@ -10,7 +10,7 @@ import SwiftUI
 struct ExerciseView: View {
     @StateObject var viewModel: ExerciseViewModel
     @EnvironmentObject private var coordinator: Coordinator
-   
+    @State private var isExerciseDoneShown = false
     
     var body: some View {
         ZStack {
@@ -24,6 +24,8 @@ struct ExerciseView: View {
         }
         .onAppear {
             viewModel.exercisesFinished = {
+                guard !isExerciseDoneShown else { return }
+                isExerciseDoneShown = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     coordinator.present(fullScreenCover: .exerciseDone)
                 }
