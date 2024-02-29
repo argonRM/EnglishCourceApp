@@ -40,10 +40,8 @@ struct ExerciseDoneView: View {
         }
         .overlay(
             Button(action: {
+                coordinator.dismissFullScreenCover()
                 coordinator.popToRoot()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                    coordinator.dismissFullScreenCover()
-                }
             }, label: {
                 Image(systemName: "xmark")
                     .font(.title)

@@ -21,7 +21,6 @@ struct CoordinatorView: View {
                             ToolbarItem(placement: .topBarLeading) {
                                     //List
                                     Button {
-                                    
                                         coordinator.pop()
                                     } label: {
                                         Image(systemName: "arrow.backward.circle")

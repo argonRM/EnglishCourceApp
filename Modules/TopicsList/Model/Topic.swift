@@ -22,7 +22,7 @@ class Topic: ObservableObject, Identifiable, Hashable {
     let date: Date
     let exerciseRequest: String
     let lessonRequest: String
-    var status: Status
+    @Published var status: Status
     var description: String = ""
     let id: String
     
