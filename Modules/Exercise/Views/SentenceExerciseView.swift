@@ -79,9 +79,7 @@ struct SentenceExerciseView: View {
                             
                     }
                     .padding(.bottom, 40)
-                   
-                        
-            
+
                     Spacer()
                     
                     ExerciseOptionsView(exercise: $exercise)

@@ -21,7 +21,6 @@ struct ExerciseOptionsView: View {
         FlowLayout(spacing: 12, alignment: .center) {
             ForEach(exercise.options, id: \.self) { string in
                 Button {
-                    
                     answer = string
                     if !checkRightAnswer(answer: string) {
                         withAnimation {
@@ -47,9 +46,7 @@ struct ExerciseOptionsView: View {
                         withAnimation(.easeOut(duration: 1)) {
                             isRightAnswerHideAnimating = true
                         }
-                        
                     }
-                    
                 } label: {
                     Text(string)
                         .italic()
