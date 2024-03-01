@@ -51,6 +51,8 @@ class Coordinator: ObservableObject {
             ExerciseBuilder(topic: topic).build()
         case .exerciseDone:
             ExerciseDoneBuilder().build()
+        case .faqScreen:
+            FaqBuilder().build()
         }
     }
 }

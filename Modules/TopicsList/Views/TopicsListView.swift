@@ -45,7 +45,7 @@ struct TopicsListView: View {
             .background(Color.topicsBackground)
             .safeAreaInset(edge: .top, alignment: .trailing, content: {
                 Button(action: {
-                    
+                    coordinator.present(sheet: .faqScreen)
                 }, label: {
                     Image(systemName: "questionmark.circle")
                         .font(.title)

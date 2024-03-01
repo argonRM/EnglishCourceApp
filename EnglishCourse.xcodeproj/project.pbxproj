@@ -24,6 +24,8 @@
 		9A4C4DE42B6D8A2B008843C5 /* TopicsListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C4DE32B6D8A2B008843C5 /* TopicsListViewCell.swift */; };
 		9A6633652B8EBB2700184ABB /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6633642B8EBB2700184ABB /* Screen.swift */; };
 		9A787F7A2B91529400F9A2B9 /* ScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A787F792B91529400F9A2B9 /* ScrollDelegate.swift */; };
+		9A787F7D2B9186D900F9A2B9 /* FaqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A787F7C2B9186D900F9A2B9 /* FaqView.swift */; };
+		9A787F7F2B9186E900F9A2B9 /* FaqBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A787F7E2B9186E900F9A2B9 /* FaqBuilder.swift */; };
 		9A91E5F42B5E90CE000773C7 /* EnglishCourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91E5F32B5E90CE000773C7 /* EnglishCourseApp.swift */; };
 		9A91E5F82B5E90CF000773C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A91E5F72B5E90CF000773C7 /* Assets.xcassets */; };
 		9A91E5FB2B5E90CF000773C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A91E5FA2B5E90CF000773C7 /* Preview Assets.xcassets */; };
@@ -89,6 +91,8 @@
 		9A4C4DE32B6D8A2B008843C5 /* TopicsListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsListViewCell.swift; sourceTree = "<group>"; };
 		9A6633642B8EBB2700184ABB /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		9A787F792B91529400F9A2B9 /* ScrollDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDelegate.swift; sourceTree = "<group>"; };
+		9A787F7C2B9186D900F9A2B9 /* FaqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqView.swift; sourceTree = "<group>"; };
+		9A787F7E2B9186E900F9A2B9 /* FaqBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqBuilder.swift; sourceTree = "<group>"; };
 		9A91E5F02B5E90CE000773C7 /* EnglishCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A91E5F32B5E90CE000773C7 /* EnglishCourseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishCourseApp.swift; sourceTree = "<group>"; };
 		9A91E5F72B5E90CF000773C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -240,6 +244,15 @@
 			path = ScrollDelegate;
 			sourceTree = "<group>";
 		};
+		9A787F7B2B916C3900F9A2B9 /* Faq */ = {
+			isa = PBXGroup;
+			children = (
+				9A787F7C2B9186D900F9A2B9 /* FaqView.swift */,
+				9A787F7E2B9186E900F9A2B9 /* FaqBuilder.swift */,
+			);
+			path = Faq;
+			sourceTree = "<group>";
+		};
 		9A91E5E72B5E90CE000773C7 = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +339,7 @@
 		9A91E62C2B5ED983000773C7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9A787F7B2B916C3900F9A2B9 /* Faq */,
 				9AA0F2F22B79288300FCCBF0 /* ExerciseDone */,
 				9A4C4DD12B6D5642008843C5 /* TopicDescription */,
 				9A4C4DCA2B6D0336008843C5 /* TopicsList */,
@@ -569,10 +583,12 @@
 				9A91E64B2B626C15000773C7 /* Arranger.swift in Sources */,
 				9A91E6272B5E926D000773C7 /* GeneralGTPRequest.swift in Sources */,
 				9AA0F3022B7A402800FCCBF0 /* TopicLesson.swift in Sources */,
+				9A787F7F2B9186E900F9A2B9 /* FaqBuilder.swift in Sources */,
 				9A91E5FD2B5E90CF000773C7 /* Persistence.swift in Sources */,
 				9A4C4DE42B6D8A2B008843C5 /* TopicsListViewCell.swift in Sources */,
 				9A91E6382B5EF01E000773C7 /* ExerciseView.swift in Sources */,
 				9A2564E92B6F96BE009CF630 /* Coordinator.swift in Sources */,
+				9A787F7D2B9186D900F9A2B9 /* FaqView.swift in Sources */,
 				9AA0F2FB2B7950A400FCCBF0 /* TopicLessonViewModel.swift in Sources */,
 				9A4C4DD32B6D5662008843C5 /* TopicLessonView.swift in Sources */,
 				9A91E6292B5E92D0000773C7 /* GeneralGTPResponse.swift in Sources */,
