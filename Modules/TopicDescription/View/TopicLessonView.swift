@@ -43,7 +43,7 @@ struct TopicLessonView: View {
                 }
                 
                 Button {
-                    coordinator.push(.exercise(viewModel.topic))
+                    coordinator.push(.exercise, topic: viewModel.topic)
                 } label: {
                     RoundedRectangle(cornerRadius: 20)
                         .frame(height: 50)

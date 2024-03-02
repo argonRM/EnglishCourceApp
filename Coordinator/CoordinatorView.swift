@@ -26,7 +26,6 @@ struct CoordinatorView: View {
                                         Image(systemName: "arrow.backward.circle")
                                             .font(.title)
                                             .foregroundColor(.white)
-                                            
                                     }
                                     .shadow(radius: 10)
                             }//: toolbar buttons

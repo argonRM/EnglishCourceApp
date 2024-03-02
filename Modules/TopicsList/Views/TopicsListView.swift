@@ -24,7 +24,7 @@ struct TopicsListView: View {
                     printTopic(topic: topic)
                     TopicsListViewCell(topic: topic)
                         .onTapGesture {
-                            coordinator.push(.topicDescription(topic))
+                            coordinator.push(.topicDescription, topic: topic)
                         }
                         .transformAnchorPreference(key: ScrollKey.self, value: .bounds) {
                             $0.append(ScrollFrame(id: topic.id, frame: geometry[$1]))

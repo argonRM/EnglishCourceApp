@@ -11,9 +11,11 @@ class Coordinator: ObservableObject {
     @Published var path = NavigationPath()
     @Published var sheet: Screen?
     @Published var fullScreenCover: Screen?
+    private var topic: Topic?
     
-    func push(_ screen: Screen) {
+    func push(_ screen: Screen, topic: Topic? = nil) {
         path.append(screen)
+        self.topic = topic
     }
     
     func present(sheet screen: Screen) {
@@ -45,14 +47,35 @@ class Coordinator: ObservableObject {
         switch screen {
         case .topicsList:
             TopicsListBuilder().build()
-        case .topicDescription(let topic):
-            TopicLessonBuilder(topic: topic).build()
-        case .exercise(let topic):
-            ExerciseBuilder(topic: topic).build()
+        case .topicDescription:
+            if let topic {
+                TopicLessonBuilder(topic: topic).build()
+            } else {
+                nonTopicView()
+            }
+        case .exercise:
+            if let topic {
+                ExerciseBuilder(topic: topic).build()
+            } else {
+                nonTopicView()
+            }
         case .exerciseDone:
             ExerciseDoneBuilder().build()
         case .faqScreen:
             FaqBuilder().build()
+        }
+    }
+    
+    private func nonTopicView() -> some View {
+        ZStack {
+            Color(.topicsBackground)
+                .ignoresSafeArea()
+            Text("Oops... it seems that there is no topic here...")
+                .font(.title2)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.white)
+                .shadow(radius: 10)
         }
     }
 }

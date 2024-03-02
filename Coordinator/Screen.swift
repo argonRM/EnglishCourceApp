@@ -12,7 +12,7 @@ enum Screen: Identifiable, Hashable {
         lhs.id == rhs.id
     }
     
-    case topicsList, topicDescription(Topic), exercise(Topic), exerciseDone, faqScreen
+    case topicsList, topicDescription, exercise, exerciseDone, faqScreen
     
     var id: UUID {
         UUID()
