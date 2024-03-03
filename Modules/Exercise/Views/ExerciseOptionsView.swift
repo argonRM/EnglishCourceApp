@@ -39,6 +39,7 @@ struct ExerciseOptionsView: View {
                         }
                     } else {
                         setupExerciseDone()
+                        isBadAnswerAnimating = false
                         withAnimation(.easeOut(duration: 2)) {
                             isRightAnswerMoveAnimating = true
                         }
