@@ -15,6 +15,7 @@ struct TopicsListViewCell: View {
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.cellColor)
                 .frame(minHeight: 80)
+                .shadow(radius: 2)
             
             HStack {
                 VStack(alignment: .leading, spacing: 3) {

@@ -33,7 +33,12 @@ struct TopicsListView: View {
                             }
                         }
                         .onPreferenceChange(ScrollKey.self) {
-                            showFaqButton = $0.first { $0.id == scrollFrame?.id }?.frame == scrollFrame?.frame
+                            let frame = $0.first { $0.id == scrollFrame?.id }
+                            if frame == nil || frame?.frame == scrollFrame?.frame  {
+                                showFaqButton = true
+                            } else {
+                                showFaqButton = false
+                            }
                         }
                 }
             }
@@ -51,6 +56,7 @@ struct TopicsListView: View {
                 .padding(.trailing, 16)
                 .foregroundColor(.white)
                 .opacity(!showFaqButton ? 0 : 1)
+                .shadow(radius: 2)
             })
             .animation(.easeIn, value: showFaqButton)
         }

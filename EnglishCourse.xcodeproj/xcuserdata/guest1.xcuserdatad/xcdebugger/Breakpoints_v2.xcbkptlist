@@ -444,8 +444,8 @@
             filePath = "Modules/TopicsList/Views/TopicsListViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -1301,8 +1301,8 @@
             filePath = "Modules/TopicsList/Views/TopicsListViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "printTopic(topic:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1558,6 +1558,38 @@
             endingLineNumber = "56"
             landmarkName = "getTopicLesson(for:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2C124A7F-E8C2-4ADD-B1FF-2B738D23F755 - 6860601ecd45783"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.TopicLessonService.getTopicLesson() -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/TopicDescription/Service/TopicLessonService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1128">
+               </Location>
+               <Location
+                  uuid = "2C124A7F-E8C2-4ADD-B1FF-2B738D23F755 - b5f7392985d365c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnglishCourse.TopicLessonService.getTopicLesson(for: EnglishCourse.Topic) -&gt; ()"
+                  moduleName = "EnglishCourse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guest1/Documents/Bolgaria/EnglishCourse/Modules/TopicDescription/Service/TopicLessonService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
