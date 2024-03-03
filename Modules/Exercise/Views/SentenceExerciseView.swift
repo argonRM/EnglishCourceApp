@@ -87,27 +87,6 @@ struct SentenceExerciseView: View {
                 }
             }
             .background(
-                //            GeometryReader { proxy in
-                ////                Image("image")
-                ////                    .resizable()
-                ////                    .scaledToFill()
-                ////                    .frame(width: proxy.size.width, height: proxy.size.height)
-                ////                    .clipped()
-                ////                    .allowsHitTesting(false)
-                //
-                //                AsyncImage(url: URL(string: exercise.imageUrl ?? "")) { image in
-                //                    image.resizable()
-                //                        .resizable()
-                //                        .scaledToFill()
-                //                        .frame(width: proxy.size.width, height: proxy.size.height)
-                //                        .clipped()
-                //                        .allowsHitTesting(false)
-                //                } placeholder: {
-                //                    ProgressView()
-                //                }
-                //
-                //            }
-                //                .ignoresSafeArea()
                 Color.clear
             )
         }
