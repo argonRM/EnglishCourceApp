@@ -84,6 +84,10 @@ struct TopicLessonView: View {
             
             ProcessingView(isVisible: viewModel.isProcessing)
         }
+        .alert(isPresented: $viewModel.isErrorOccurred) {
+            Alert(title: Text("Error"), message: Text( "Cannot download a lesson")
+                  , dismissButton: .default(Text("Ok :(")))
+        }
     }
 }
 

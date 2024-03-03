@@ -13,6 +13,7 @@ class FaqBuilder: ScreenBuilder {
     }
 
     private func initView() -> AnyView {
-        return AnyView(FaqView())
+        let faqViewModel = FaqViewModel()
+        return AnyView(FaqView(viewModel: faqViewModel))
     }
 }

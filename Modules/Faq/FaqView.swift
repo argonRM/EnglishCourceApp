@@ -9,14 +9,8 @@ import SwiftUI
 import Combine
 
 struct FaqView: View {
-    @State private var isAnimation = false
-    @State private var apiKeyText: String = apiKey
-    @State private var cancellables: Set<AnyCancellable> = []
     @EnvironmentObject private var coordinator: Coordinator
-    
-    init() {
-        setupPublishers()
-    }
+    @StateObject var viewModel: FaqViewModel
 
     var body: some View {
         ZStack {
@@ -39,7 +33,7 @@ struct FaqView: View {
                     .foregroundColor(.white)
                     .shadow(radius: 10)
                     .padding([.leading, .trailing])
-                TextField(text: $apiKeyText) {
+                TextField(text: $viewModel.apiKeyText) {
                     Text("API key is empty now")
                 }
                 .foregroundColor(.white)
@@ -52,6 +46,22 @@ struct FaqView: View {
                             .shadow(radius: 10)
                     )
                 .padding()
+                
+                Button {
+                    viewModel.setApiKey()
+                } label: {
+                    RoundedRectangle(cornerRadius: 20)
+                        .frame(height: 50)
+                        .foregroundColor(Color.pink)
+                        .overlay(
+                            Text("Confirm Api key")
+                                .font(.title2)
+                                .foregroundColor(.white)
+                                .fontWeight(.bold)
+                        )
+                        .padding([.leading, .bottom, .trailing])
+                }
+                .shadow(radius: 10)
             }
         }
         .overlay(
@@ -67,24 +77,30 @@ struct FaqView: View {
             .foregroundColor(.white)
             , alignment: .topTrailing
         )
+        .alert(isPresented: $viewModel.faqAlertPresented) {
+            Alert(title: Text(viewModel.faqAlert.title), message: Text(viewModel.faqAlert.message)
+                  , dismissButton: .default(Text(viewModel.faqAlert.button)))
+        }
+    }
+}
+
+class ApiKeyTextPublisher: ObservableObject {
+    @Published var apiKeyText: String = ""
+    private var cancellables: Set<AnyCancellable> = []
+    
+    init() {
+        setup()
     }
     
-    private func setupPublishers() {
-        apiKeyText.publisher
-            .sink(receiveCompletion: { completion in
-                switch completion {
-                case .finished:
-                    apiKey = apiKeyText
-                case .failure(let error):
-                    print(error)
-                }
-            }, receiveValue: { exercises in
-                
+    private func setup() {
+        $apiKeyText
+            .sink(receiveValue: { _ in
+                apiKey = self.apiKeyText
             })
             .store(in: &cancellables)
     }
 }
 
 #Preview {
-    FaqView()
+    FaqView(viewModel: FaqViewModel())
 }

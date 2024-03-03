@@ -22,6 +22,7 @@
 		9A4C4DDE2B6D7D71008843C5 /* TopicsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C4DDD2B6D7D71008843C5 /* TopicsListBuilder.swift */; };
 		9A4C4DE12B6D89D2008843C5 /* ExerciseServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C4DE02B6D89D2008843C5 /* ExerciseServiceProtocol.swift */; };
 		9A4C4DE42B6D8A2B008843C5 /* TopicsListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C4DE32B6D8A2B008843C5 /* TopicsListViewCell.swift */; };
+		9A62016C2B93BDA6005C1944 /* FaqViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62016B2B93BDA6005C1944 /* FaqViewModel.swift */; };
 		9A6633652B8EBB2700184ABB /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6633642B8EBB2700184ABB /* Screen.swift */; };
 		9A787F7A2B91529400F9A2B9 /* ScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A787F792B91529400F9A2B9 /* ScrollDelegate.swift */; };
 		9A787F7D2B9186D900F9A2B9 /* FaqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A787F7C2B9186D900F9A2B9 /* FaqView.swift */; };
@@ -89,6 +90,7 @@
 		9A4C4DDD2B6D7D71008843C5 /* TopicsListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsListBuilder.swift; sourceTree = "<group>"; };
 		9A4C4DE02B6D89D2008843C5 /* ExerciseServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseServiceProtocol.swift; sourceTree = "<group>"; };
 		9A4C4DE32B6D8A2B008843C5 /* TopicsListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsListViewCell.swift; sourceTree = "<group>"; };
+		9A62016B2B93BDA6005C1944 /* FaqViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewModel.swift; sourceTree = "<group>"; };
 		9A6633642B8EBB2700184ABB /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		9A787F792B91529400F9A2B9 /* ScrollDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDelegate.swift; sourceTree = "<group>"; };
 		9A787F7C2B9186D900F9A2B9 /* FaqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqView.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			children = (
 				9A787F7C2B9186D900F9A2B9 /* FaqView.swift */,
 				9A787F7E2B9186E900F9A2B9 /* FaqBuilder.swift */,
+				9A62016B2B93BDA6005C1944 /* FaqViewModel.swift */,
 			);
 			path = Faq;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 				9A2831CE2B74193F00AE0914 /* GenerateImageRequest.swift in Sources */,
 				9A91E6552B65230F000773C7 /* ExerciseOptionsView.swift in Sources */,
 				9A787F7A2B91529400F9A2B9 /* ScrollDelegate.swift in Sources */,
+				9A62016C2B93BDA6005C1944 /* FaqViewModel.swift in Sources */,
 				9A91E6002B5E90CF000773C7 /* EnglishCourse.xcdatamodeld in Sources */,
 				9A4C4DE12B6D89D2008843C5 /* ExerciseServiceProtocol.swift in Sources */,
 				9A2564ED2B6F9C73009CF630 /* TopicLessonBuilder.swift in Sources */,

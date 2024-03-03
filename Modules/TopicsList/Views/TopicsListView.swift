@@ -10,7 +10,7 @@ import SwiftUI
 struct TopicsListView: View {
     @ObservedObject private var viewModel: TopicsListViewModel
     @EnvironmentObject private var coordinator: Coordinator
-    @State private var isAtTop = true
+    @State private var showFaqButton = true
     @State var scrollFrame: ScrollFrame?
     
     init(viewModel: TopicsListViewModel) {
@@ -33,11 +33,7 @@ struct TopicsListView: View {
                             }
                         }
                         .onPreferenceChange(ScrollKey.self) {
-                            if let frame = $0.first(where: { $0.id == scrollFrame?.id }), frame.frame == scrollFrame?.frame  {
-                                isAtTop = true
-                            } else {
-                                isAtTop = false
-                            }
+                            showFaqButton = $0.first { $0.id == scrollFrame?.id }?.frame == scrollFrame?.frame
                         }
                 }
             }
@@ -54,9 +50,9 @@ struct TopicsListView: View {
                 .padding(.top, 10)
                 .padding(.trailing, 16)
                 .foregroundColor(.white)
-                .opacity(!isAtTop ? 0 : 1)
+                .opacity(!showFaqButton ? 0 : 1)
             })
-            .animation(.easeIn, value: isAtTop)
+            .animation(.easeIn, value: showFaqButton)
         }
     }
     

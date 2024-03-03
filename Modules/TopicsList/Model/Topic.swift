@@ -23,7 +23,7 @@ class Topic: ObservableObject, Identifiable, Hashable {
     let exerciseRequest: String
     let lessonRequest: String
     @Published var status: Status
-    var description: String = ""
+    @Published var description: String = ""
     let id: String
     
     init(topicManagedModel: TopicManagedModel) {

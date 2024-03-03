@@ -20,7 +20,7 @@ final class TopicLessonViewModel: ObservableObject {
         self.topicLessonService = topicLessonService
         self.topic = topic
         setupPublishers()
-        self.topicLessonService.getDescription(for: topic)
+        self.topicLessonService.getLesson(for: topic)
     }
     
     func setupPublishers() {
@@ -39,6 +39,6 @@ final class TopicLessonViewModel: ObservableObject {
     }
     
     func regenerateTopicDescription() {
-        topicLessonService.getDescription(for: topic, forceFetch: true)
+        topicLessonService.getLesson(for: topic, forceFetch: true)
     }
 }

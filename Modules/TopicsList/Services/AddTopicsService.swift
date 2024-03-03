@@ -8,13 +8,14 @@
 import Foundation
 import CoreData
 
+struct UserDefaultsKeys {
+    static let isLaunchedFirstTime = "IsLaunchedFirstTime"
+    static let apiKey = "apiKey"
+}
+
 class AddTopicsService {
     
     private let viewContext: NSManagedObjectContext
-    
-    private struct UserDefaultsKeys {
-        static let isLaunchedFirstTime = "IsLaunchedFirstTime"
-    }
     
     init(viewContext: NSManagedObjectContext) {
         self.viewContext = viewContext
