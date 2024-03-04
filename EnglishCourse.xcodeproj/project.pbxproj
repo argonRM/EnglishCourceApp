@@ -51,7 +51,6 @@
 		9AA0F2F62B792D6F00FCCBF0 /* ExerciseDoneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0F2F52B792D6F00FCCBF0 /* ExerciseDoneBuilder.swift */; };
 		9AA0F2FB2B7950A400FCCBF0 /* TopicLessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0F2FA2B7950A400FCCBF0 /* TopicLessonViewModel.swift */; };
 		9AA0F3002B7A3CFB00FCCBF0 /* TopicLessonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0F2FF2B7A3CFB00FCCBF0 /* TopicLessonService.swift */; };
-		9AA0F3022B7A402800FCCBF0 /* TopicLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0F3012B7A402800FCCBF0 /* TopicLesson.swift */; };
 		9ADBACFC2B76B4FA0088AC9C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9ADBACFB2B76B4FA0088AC9C /* Kingfisher */; };
 		9AF1A03C2B69024E00564094 /* ExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A03B2B69024E00564094 /* ExerciseService.swift */; };
 /* End PBXBuildFile section */
@@ -122,7 +121,6 @@
 		9AA0F2F72B794D1C00FCCBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9AA0F2FA2B7950A400FCCBF0 /* TopicLessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLessonViewModel.swift; sourceTree = "<group>"; };
 		9AA0F2FF2B7A3CFB00FCCBF0 /* TopicLessonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLessonService.swift; sourceTree = "<group>"; };
-		9AA0F3012B7A402800FCCBF0 /* TopicLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLesson.swift; sourceTree = "<group>"; };
 		9AF1A03B2B69024E00564094 /* ExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -332,7 +330,6 @@
 				9A91E62A2B5E95AD000773C7 /* ToBeExercise.swift */,
 				9A2831CB2B7410BF00AE0914 /* GenerateImageResponse.swift */,
 				9A2831CD2B74193F00AE0914 /* GenerateImageRequest.swift */,
-				9AA0F3012B7A402800FCCBF0 /* TopicLesson.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -582,7 +579,6 @@
 				9A91E6482B626BE8000773C7 /* FlowLayout.swift in Sources */,
 				9A91E64B2B626C15000773C7 /* Arranger.swift in Sources */,
 				9A91E6272B5E926D000773C7 /* GeneralGTPRequest.swift in Sources */,
-				9AA0F3022B7A402800FCCBF0 /* TopicLesson.swift in Sources */,
 				9A787F7F2B9186E900F9A2B9 /* FaqBuilder.swift in Sources */,
 				9A91E5FD2B5E90CF000773C7 /* Persistence.swift in Sources */,
 				9A4C4DE42B6D8A2B008843C5 /* TopicsListViewCell.swift in Sources */,
