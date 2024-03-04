@@ -19,22 +19,22 @@ class Topic: ObservableObject, Identifiable, Hashable {
     
     let subtitle: String
     let title: String
-    let date: Date
-    let exerciseRequest: String
-    let lessonRequest: String
+    @Published var date: Date
+    @Published var exerciseRequest: String
+    @Published var lessonRequest: String
     @Published var status: Status
     @Published var description: String = ""
-    let id: String
+    @Published var id: String
     
     init(topicManagedModel: TopicManagedModel) {
         self.title = topicManagedModel.title ?? ""
         self.subtitle = topicManagedModel.subtitle ?? ""
         self.date = topicManagedModel.date ?? Date()
         self.status = Status(rawValue: Int(topicManagedModel.status)) ?? .start
-        self.id = self.title + self.subtitle
         self.description = topicManagedModel.topicDescription ?? ""
         self.lessonRequest = topicManagedModel.lessonRequest ?? ""
         self.exerciseRequest = topicManagedModel.exerciseRequest ?? ""
+        self.id = self.title + self.subtitle
     }
     
     init() {
