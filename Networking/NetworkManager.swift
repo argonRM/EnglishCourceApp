@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-var apiKey: String = UserDefaults.standard.string(forKey: UserDefaultsKeys.apiKey) ?? "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"
+var apiKey: String = UserDefaults.standard.string(forKey: UserDefaultsKeys.apiKey) ?? ""
 
 struct NetworkManager {
     
