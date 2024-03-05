@@ -7,3 +7,6 @@ I couldn't find suitable examples of applications to use. The applications provi
 If you do not have an API key generated in the OpenAI Developer Console, you can use the app in hardcoded mode just to test the UI.
 Here you can see the flow of all screens.
 ![Group 23](https://github.com/argonRM/EnglishCourceApp/assets/39482176/00d93443-e790-4b5b-bf2b-5aa8e1cbe4e8)
+
+### The link on YouTube video
+https://youtu.be/NJtBe0tbjak
