@@ -9,7 +9,7 @@ import CoreData
 import Combine
 import SwiftUI
 
-class TopicsListViewModel: ObservableObject {
+final class TopicsListViewModel: ObservableObject {
     @Published var topics: [Topic] = []
     
     private let addTopicsService: AddTopicsService

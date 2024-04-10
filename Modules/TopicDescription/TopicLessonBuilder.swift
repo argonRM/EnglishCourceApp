@@ -9,7 +9,7 @@ import Foundation
 
 import SwiftUI
 
-class TopicLessonBuilder: ScreenBuilder {
+final class TopicLessonBuilder: ScreenBuilder {
     let topic: Topic
     
     init(topic: Topic) {

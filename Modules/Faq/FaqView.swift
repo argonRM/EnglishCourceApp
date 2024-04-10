@@ -84,7 +84,7 @@ struct FaqView: View {
     }
 }
 
-class ApiKeyTextPublisher: ObservableObject {
+final class ApiKeyTextPublisher: ObservableObject {
     @Published var apiKeyText: String = ""
     private var cancellables: Set<AnyCancellable> = []
     

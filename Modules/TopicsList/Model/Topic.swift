@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class Topic: ObservableObject, Identifiable, Hashable {
+final class Topic: ObservableObject, Identifiable, Hashable {
     static func == (lhs: Topic, rhs: Topic) -> Bool {
         lhs.id == rhs.id
     }

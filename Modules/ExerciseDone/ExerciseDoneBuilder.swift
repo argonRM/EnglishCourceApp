@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class ExerciseDoneBuilder: ScreenBuilder {
+final class ExerciseDoneBuilder: ScreenBuilder {
     public func build() -> AnyView {
         return initView()
     }

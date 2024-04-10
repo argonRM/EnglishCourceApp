@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class FaqBuilder: ScreenBuilder {
+final class FaqBuilder: ScreenBuilder {
     public func build() -> AnyView {
         return initView()
     }

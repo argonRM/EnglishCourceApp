@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class TopicsListBuilder: ScreenBuilder {
+final class TopicsListBuilder: ScreenBuilder {
     public func build() -> AnyView {
         return initView()
     }

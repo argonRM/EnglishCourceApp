@@ -13,7 +13,7 @@ struct UserDefaultsKeys {
     static let apiKey = "apiKey"
 }
 
-class AddTopicsService {
+final class AddTopicsService {
     
     private let viewContext: NSManagedObjectContext
     

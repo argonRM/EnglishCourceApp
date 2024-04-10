@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class Coordinator: ObservableObject {
+final class Coordinator: ObservableObject {
     @Published var path = NavigationPath()
     @Published var sheet: Screen?
     @Published var fullScreenCover: Screen?

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class ExerciseBuilder: ScreenBuilder {
+final class ExerciseBuilder: ScreenBuilder {
     let topic: Topic
     
     init(topic: Topic) {
