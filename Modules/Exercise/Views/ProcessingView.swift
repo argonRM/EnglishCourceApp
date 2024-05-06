@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-// MARK: - ProcessingView
 struct ProcessingView: View {
+    // MARK: - Properties
     @State private var processingAnimation = false
     var isVisible: Bool
     
+    // MARK: - Body
     var body: some View {
         ZStack {
             if isVisible {

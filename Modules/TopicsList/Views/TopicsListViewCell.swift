@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct TopicsListViewCell: View {
+    // MARK: - Properties
     @ObservedObject var topic: Topic
     
+    // MARK: - Body
     var body: some View {
         ZStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: 20)

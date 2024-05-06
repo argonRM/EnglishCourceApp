@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct TopicsListView: View {
+    // MARK: - Properties
     @StateObject var viewModel: TopicsListViewModel
     @EnvironmentObject private var coordinator: Coordinator
     @State private var showFaqButton = true
     @State var scrollFrame: ScrollFrame?
 
+    // MARK: - Body
     var body: some View {
         GeometryReader { geometry in
             List {

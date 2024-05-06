@@ -51,4 +51,8 @@ final class ExerciseViewModel: ObservableObject {
                 self.exercisesFinished?()
             })
     }
+    
+    func cancelLoadingActivities() {
+        exerciseService.cancelImagesLoading()
+    }
 }

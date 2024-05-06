@@ -16,6 +16,7 @@ final class ExerciseService {
     private var cancellables: Set<AnyCancellable> = []
     private var networkManager: NetworkManager
     private var context: NSManagedObjectContext
+    private var tasksArray: [Task<Void, Never>] = []
     
     init(networkManager: NetworkManager, context: NSManagedObjectContext) {
         self.networkManager = networkManager
@@ -36,6 +37,12 @@ final class ExerciseService {
             getChatGPTExercise(for: topic)
         } else {
             getHardcodedExercise()
+        }
+    }
+    
+    func cancelImagesLoading() {
+        for task in tasksArray {
+            task.cancel()
         }
     }
 }
@@ -84,7 +91,13 @@ private extension ExerciseService {
                 guard let self else { return }
                 switch completion {
                 case .finished:
-                    self.getImagesForExercises()
+                    ///previous implementation
+                    //self.getImagesForExercises()
+                    
+                    ///new implementation
+                    Task {
+                        await self.getImagesForExercisesConcurrency()
+                    }
                 case .failure(let error):
                     print(error)
                     isErrorOccurred = true
@@ -138,12 +151,16 @@ private extension ExerciseService {
         var responsesReceived = 0
         let totalExercises = exercises.count
         
+        let dispatchGroup = DispatchGroup()
+        
         exercises.forEach { [weak self] exercise in
+            dispatchGroup.enter()
             self?.getImageFor(exercise: exercise) {
-                responsesReceived += 1
-                if responsesReceived == totalExercises {
-                    self?.isProcessing = false
-                }
+                dispatchGroup.leave()
+            }
+            
+            dispatchGroup.notify(queue: DispatchQueue.main) {
+                self?.isProcessing = false
             }
         }
     }
@@ -202,6 +219,47 @@ private extension ExerciseService {
     }
 }
 
+// MARK: - Swift Concurrency image loading example
+private extension ExerciseService {
+    @MainActor
+    func handleGenerateImageResponse(exercise: ToBeExercise) async {
+        let requestModel = GenerateImageRequest(model: "dall-e-3", prompt: "Generate an image that reflect the essence of the sentence <\(exercise.sentence)>. The image should be in cartoon format.", n: 1, size: "1024x1024")
+        
+        do {
+            let (data, httpResponse) = try await networkManager.gptRequestSwiftConcurrency(requestModel: requestModel, requestType: .generateImage)
+            guard let httpResponse = httpResponse as? HTTPURLResponse,
+                  httpResponse.statusCode == 200 else {
+                throw ToBeExerciseServiceError.badResponse
+            }
+            
+            let response = try JSONDecoder().decode(GenerateImageResponse.self, from: data)
+            if let index = exercises.firstIndex(where: { $0.sentence == exercise.sentence }) {
+                print(response.data.first?.url ?? "no image response")
+                exercises[index].imageUrl = response.data.first?.url
+            }
+        } catch {
+            print("Error: \(error)")
+        }
+    }
+    
+    @MainActor
+    func getImagesForExercisesConcurrency() {
+        Task {
+            tasksArray = self.exercises.map { exercise -> Task<Void, Never> in
+                return Task {
+                    await handleGenerateImageResponse(exercise: exercise)
+                }
+            }
+            
+            for  task in tasksArray {
+                await task.value // Wait for each task to complete
+            }
+            isProcessing = false
+        }
+    }
+}
+
+// MARK: - Error
 extension ExerciseService {
     enum ToBeExerciseServiceError: Error {
         case badResponse

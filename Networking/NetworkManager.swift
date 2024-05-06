@@ -55,6 +55,16 @@ struct NetworkManager {
         let publisher = URLSession.shared.dataTaskPublisher(for: request)
         return publisher
     }
+    
+    
+    // MARK: - Swift Concurrency image loading example
+    func gptRequestSwiftConcurrency(requestModel: Codable, requestType: Request) async throws -> (Data, URLResponse) {
+        let httpBody = getRequestBody(requestModel: requestModel)
+        let request = requestType.getURLRequest(from: httpBody)
+        let (data, response) = try await URLSession.shared.data(for: request)
+        return (data, response)
+    }
+    
 }
 
 // MARK: - Private

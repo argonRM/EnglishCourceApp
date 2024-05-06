@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ExerciseView: View {
+    // MARK: - Properties
     @StateObject var viewModel: ExerciseViewModel
     @EnvironmentObject private var coordinator: Coordinator
     @State private var isExerciseDoneShown = false
     
+    // MARK: - Body
     var body: some View {
         ZStack {
             ExercisesTabView(exercises: $viewModel.exercises)
@@ -30,6 +32,9 @@ struct ExerciseView: View {
                     coordinator.present(fullScreenCover: .exerciseDone)
                 }
             }
+        }
+        .onDisappear {
+            viewModel.cancelLoadingActivities()
         }
         .background(
             ZStack {

@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ExerciseDoneView: View {
+    // MARK: - Properties
     @State private var isAnimation = false
     @EnvironmentObject private var coordinator: Coordinator
     
+    // MARK: - Body
     var body: some View {
         ZStack {
             Color.topicsBackground

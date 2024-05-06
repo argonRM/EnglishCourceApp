@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct TopicLessonView: View {
+    // MARK: - Properties
     @EnvironmentObject private var coordinator: Coordinator
     @StateObject var viewModel: TopicLessonViewModel
     
+    // MARK: - Body
     var body: some View {
         ZStack {
             VStack {

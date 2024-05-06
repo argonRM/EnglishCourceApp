@@ -9,9 +9,11 @@ import SwiftUI
 import Combine
 
 struct FaqView: View {
+    // MARK: - Properties
     @EnvironmentObject private var coordinator: Coordinator
     @StateObject var viewModel: FaqViewModel
 
+    // MARK: - Body
     var body: some View {
         ZStack {
             Color.topicsBackground
